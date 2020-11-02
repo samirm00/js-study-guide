@@ -30,8 +30,9 @@ _As a user_ : _I will see the repository with full readme and the strategy plan_
 - Write the strategy plan 
 
 
-### 1-Design the website 
+## 1-Design the website 
 _As a user_ : _I will see the the website design in Figma file_
+
 _As a visitor_ : _I will see the the website design in Figma file_
 
 - Create a Figma file `Js-Study-Guide` 
@@ -41,6 +42,7 @@ _As a visitor_ : _I will see the the website design in Figma file_
 ## 2-Home (Samir)
 
 _As a user_ : _I will see the the `home` branch with home.html file and style.css_
+
 _As a visitor_ : _I will to see the home page of the website guide and get more General information about JavaScript_
 
 ### REPO
@@ -57,6 +59,7 @@ _As a visitor_ : _I will to see the home page of the website guide and get more 
 ## 3-Variables (Krystyna)
 
 _As a user_ : _I will see the the `variables` branch with variable.html file and style.css_
+
 _As a visitor_ : _I want to know more information about the variables in Javascript_
 
 ### REPO
@@ -83,6 +86,7 @@ _As a visitor_ : _I want to know more information about the variables in Javascr
 ## 4-Operations (Marie)
 
 _As a user_ : _I will see the the `operations` branch with operations.html file and style.css_
+
 _As a visitor_ : _I want to know more information about the different operations in Javascript_
 
 ### REPO
@@ -104,6 +108,7 @@ _As a visitor_ : _I want to know more information about the different operations
 ## 5-Loops (Houcinos)
 
 _As a user_ : _I will see the the `loops` branch with loops.html file and style.css_
+
 _As a visitor_ : _I want to know more information about the different loops in Javascript_
 
 ### REPO
@@ -126,6 +131,7 @@ _As a visitor_ : _I want to know more information about the different loops in J
 ## 6-Reference type (Samir)
 
 _As a user_ : _I will see the the `reference` branch with reference.html file and style.css_
+
 _As a visitor_ : _I want to know more information about the reference type in Javascript_
 
 ### REPO
