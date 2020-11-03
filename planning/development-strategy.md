@@ -16,7 +16,7 @@
 
 ---
 
-## 0.Setup
+## 0.Setup (samir)
 _As a user_ : _I will see the repository with full readme and the strategy plan_
 
 ### REPO
@@ -30,7 +30,7 @@ _As a user_ : _I will see the repository with full readme and the strategy plan_
 - Write the strategy plan 
 
 
-## 1-Design the website 
+## 1-Design the website (Group)
 _As a user_ : _I will see the Figma file_
 
 _As a visitor_ : _I will see the website designed  in Figma file_
