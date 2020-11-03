@@ -31,9 +31,9 @@ _As a user_ : _I will see the repository with full readme and the strategy plan_
 
 
 ## 1-Design the website 
-_As a user_ : _I will see the the website design in Figma file_
+_As a user_ : _I will see the Figma file_
 
-_As a visitor_ : _I will see the the website design in Figma file_
+_As a visitor_ : _I will see the website designed  in Figma file_
 
 - Create a Figma file `Js-Study-Guide` 
 - Share the link with the collaborators.
@@ -43,7 +43,7 @@ _As a visitor_ : _I will see the the website design in Figma file_
 
 _As a user_ : _I will see the the `home` branch with home.html file and style.css_
 
-_As a visitor_ : _I will to see the home page of the website guide and get more General information about JavaScript_
+_As a visitor_ : _I will see the home page of the website guide and get more General information about JavaScript_
 
 ### REPO
 
@@ -79,7 +79,7 @@ _As a visitor_ : _I want to know more information about the variables in Javascr
 - example for each type 
 - what is the different ways to declare a variable  let , const and var 
 - What is the different between these 3 
-- (We will delete this steps later it is just a giude ).
+- (We will delete this steps later it  ).
 - Add the change , commit them and push to GitHub
 - Merge `variables` with `master`
 
@@ -101,7 +101,7 @@ _As a visitor_ : _I want to know more information about the different operations
 - conditional (if )  (if  else ) (if else if )  (if else if  else )
 - comaprisons
 - example for each type 
-- (We will delete this steps later it is just a giude ).
+- (We will delete this steps later ).
 - Add the change , commit them and push to GitHub
 - Merge `operations` with `master`
   
@@ -123,7 +123,7 @@ _As a visitor_ : _I want to know more information about the different loops in J
 - While loops
 - some other loops ( do while loops optinoal )
 - example for each type 
-- (We will delete this steps later it is just a giude ).
+- (We will delete this steps later ).
 - Add the change , commit them and push to GitHub
 - Merge `loops` with `master`
 
@@ -147,7 +147,7 @@ _As a visitor_ : _I want to know more information about the reference type in Ja
 - Arrays
 - functions
 - example for each type 
-- (We will delete this steps later it is just a giude ).
+- (We will delete this steps later ).
 - Add the change , commit them and push to GitHub
 - Merge `reference` with `master`
 
