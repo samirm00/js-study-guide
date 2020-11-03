@@ -155,3 +155,4 @@ _As a visitor_ : _I want to know more information about the reference type in Ja
 
 - Make sure everything working properly 
 - Correct the errors in html and css files 
+- Write full README file
