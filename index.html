@@ -1,32 +1,149 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title></title>
-  <meta charset="utf-8">
+    <title>JavaScript Study Guide </title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=width-device"/>
+    <meta name="description" content="JavaScript study guide website">
 
-  <!-- you will need these styles and scripts -->
-  <!-- if you create new .html files, copy them into the head -->
-  <!-- if those files are in a folder, be sure to adjust all the paths! -->
-  <link rel="stylesheet" data-name="vs/editor/editor.main" href="./lib/monaco/min/vs/editor/editor.main.css">
+    <!-- you will need these styles and scripts -->
+    <!-- if you create new .html files, copy them into the head -->
+    <!-- if those files are in a folder, be sure to adjust all the paths! -->
+    <link rel="stylesheet" data-name="vs/editor/editor.main" href="./lib/monaco/min/vs/editor/editor.main.css"/>
+    <link rel="stylesheet" href="./CSS/home.css"/>
+    <link rel="stylesheet" href="./CSS/flexboxgrid.css"/>
+    <link rel="icon" href="./images/icon.png">
 
-  <script src='./lib/prettier/standalone.js'></script>
-  <script src='./lib/prettier/parser-babel.js'></script>
+    <script src='./lib/prettier/standalone.js'></script>
+    <script src='./lib/prettier/parser-babel.js'></script>
 
-  <script>var require = { paths: { 'vs': './lib/monaco/min/vs' } };</script>
-  <script src="./lib/monaco/min/vs/loader.js"></script>
-  <script src="./lib/monaco/min/vs/editor/editor.main.nls.js"></script>
-  <script src="./lib/monaco/min/vs/editor/editor.main.js"></script>
+    <script>var require = { paths: { 'vs': './lib/monaco/min/vs' } };</script>
+    <script src="./lib/monaco/min/vs/loader.js"></script>
+    <script src="./lib/monaco/min/vs/editor/editor.main.nls.js"></script>
+    <script src="./lib/monaco/min/vs/editor/editor.main.js"></script>
 
-  <script src='./lib/wc-js-snippet.js'></script>
+    <script src='./lib/wc-js-snippet.js'></script>
 
-  <script src='./lib/evaluation-buttons.js'></script>
-
+    <script src='./lib/evaluation-buttons.js'></script>
 
 </head>
 
 <body>
+  <!--   HEADER-->
+    <header class="main-header" >
+      <div class="container">
+          <div class="row start-xm start-sm start-md start-lg  middle-sm middle-md middle-md middle-lg ">
+              <div  id="logo" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 center-xs center-sm center-md center-lg">
+                <img src="./images/logo.PNG" alt="Logo"/>
+              </div>
+              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 center-xs center-sm center-md center-lg">
+                <h1>JavaScript Tutorial </h1>
+              </div>
+              <div id="search" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 center-xs center-sm center-md center-lg">
+                <form action="https://www.google.com/">
+                    <input type="text" >
+                    <input type="submit" value="">
+                </form>
+              </div>
+              <div id ="mail" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 center-xs center-sm center-md center-lg">
+                <img src="./images/Email.PNG" alt="E-mail"/> 
+              </div>
 
+          </div>
+      
+      </div> 
+      <nav class="main-nav">
+          <ul>
+              <li> <a href="index.html"><span id="current-page">Home</span></a> </li>
+              <li> <a href="variables.html">Variables</a></li>
+              <li> <a href="operations.html">Operations</a></li>
+              <li> <a href="loops.html">Loops</a></li>
+              <li> <a href="reference.html">Reference type</a></li>
+              
+          </ul>
+      </nav>
+    </header> 
+    <!--MAIN part -->
+    <main>
+        <section class="section-text">
+            <h3>What is JavaScript ?</h3>
+            <p>
+                <b>Javascript</b> is one of the most popular programing languages, it is considered as the language of the Web ,
+                 it makes the web pages alive.If we make a comparison between the human body and the web pages , HTML will be like 
+                 the skelton (bones) , CSS will be like the skin and JavaScript will be like the muscles which moving everything.
+                 There are at least three great things make JavaScript unique , first Full integration with HTML/CSS. second ,
+                 Simple things are done simply and third, Support by all major browsers and enabled by default.
+                </p>
+            
+        </section>
+        
+        <section class="section-text">
+          <h3>What is the deference between JavaScript and ECMAScript ?</h3>
+          <p>
+            <b>ECMAScript :</b><br>
+                The full form of ECMA is European Computer Manufacturer's Association. ECMAScript is
+                a Standard for scripting languages such as JavaScript, JScript, etc. It is a trademark
+                scripting language specification. JavaScript is a language based on ECMAScript. A standard
+                for scripting languages like JavaScript, JScript is ECMAScript. JavaScript is considered as
+                one of the most popular implementations of ECMAScript.
+            <br>
+        
+            <b>JavaScript :</b><br>
+              JavaScript is an implementation of the ECMAScript standard. 
+              </p>
+        </section>
+        <section class="section-text">
+            <h3>What is the deference between JavaScript and Java ?</h3>
+            <p>
+                  <b>JavaScript :</b><br>
+                  JavaScript is a lightweight programming language(“scripting language”) and used
+                   to make web pages interactive. It can insert dynamic text into HTML. JavaScript
+                    is also known as browser’s language. JavaScript(JS) is not similar or related
+                     to Java. Both the languages have a C like a syntax and are widely used in 
+                     client-side Web applications, but there are few similarities only.<br>
+                  
+                  <b>Java :</b><br>
+                  Java is an object-oriented programming language and have virtual machine platform that
+                   allows you to create compiled programs that run on nearly every platform. Java promised,
+                    “Write Once, Run Anywhere”.
+            </p>
+        </section>
+        <section class="section-text">
+            <h3>What do you need to start with JavaScript ?</h3>
+            <p>
+                All you need is a good text editor like VSC or any other text editor ,JavaScript code can be executed in almost any browser   
+            </p>
+        
+        </section>
+    </main>
+<!--FOOTER-->
+<footer class="main-footer">
+    <div class="container">
+        <div class="row start-xm start-sm start-md start-lg  middle-sm middle-md middle-md middle-lg ">
+            <div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+              <h2>About Us</h2>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+                <h2>Contact Us </h2>
+            </div>
+            <div  class="col-xs-4 col-sm-4 col-md-4 col-lg-4 center-xs center-sm center-md center-lg">
+              <h2>Share this :</h2>
+            </div>
+            <div class="media-f" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+              <img src="./images/facebook.png" alt="Facebook" /> 
+            </div>
+            <div class ="media-t" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+                <img src="./images/twitter.png" alt="twitter" /> 
+              </div>
+        </div>
+    
+    </div> 
+    <div class="copyright">
+        <p>Copyright&#169;HackYourFuture2020</p>
+    </div>
+
+</footer>
 </body>
 
 </html>
+
