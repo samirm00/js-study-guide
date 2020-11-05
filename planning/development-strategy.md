@@ -21,8 +21,6 @@ _As a user_ : _I will see the repository with full readme and the strategy plan_
 
 ### REPO
 
- _This user story is developed on branch `master`._
-
 - Fork the repo `js-study-guide` 
 - Add collaborators 
 - Turn on GitHub pages 
@@ -41,19 +39,17 @@ _As a visitor_ : _I will see the website designed  in Figma file_
   
 ## 2-Home (Samir)
 
-_As a user_ : _I will see the the `home` branch with home.html file and style.css_
+_As a user_ : _I will see the the `master` branch with index.html file and home.css_
 
 _As a visitor_ : _I will see the home page of the website guide and get more General information about JavaScript_
 
 ### REPO
 
- _This user story is developed on branch `Home`._
+ _This user story is developed on branch `master`._
 
-- Create a branch `home` 
-- Add code to `index.html` and `style.css` 
+- Add code to `index.html` and `home.css` 
 - Write general information about JavaScript , some history and defintion (We will delete this step later it is just a giude ).
 - Add the change , commit them and push to GitHub
-- Merge `home` with `master`
 
 
 ## 3-Variables (Krystyna)
