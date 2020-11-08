@@ -146,3 +146,10 @@ h2 {
   font-family: "Proza Libre", sans-serif;
   font-size: 12px;
 }
+/* JS  SNIPPET */
+.code {
+  width: 50vw;
+  text-align: left;
+  margin-left: 20rem;
+  margin-bottom: 3rem;
+}
