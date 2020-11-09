@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Study Guide </title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=width-device"/>
+    <meta name="description" content="JavaScript study guide website">
+
+    <!-- you will need these styles and scripts -->
+    <!-- if you create new .html files, copy them into the head -->
+    <!-- if those files are in a folder, be sure to adjust all the paths! -->
+    <link rel="stylesheet" data-name="vs/editor/editor.main" href="./lib/monaco/min/vs/editor/editor.main.css"/>
+    <link rel="stylesheet" href="./CSS/home.css"/>
+    <link rel="stylesheet" href="./CSS/flexboxgrid.css"/>
+    <link rel="icon" href="./images/icon.png">
+
+    <script src='./lib/prettier/standalone.js'></script>
+    <script src='./lib/prettier/parser-babel.js'></script>
+
+    <script>var require = { paths: { 'vs': './lib/monaco/min/vs' } };</script>
+    <script src="./lib/monaco/min/vs/loader.js"></script>
+    <script src="./lib/monaco/min/vs/editor/editor.main.nls.js"></script>
+    <script src="./lib/monaco/min/vs/editor/editor.main.js"></script>
+
+    <script src='./lib/wc-js-snippet.js'></script>
+
+    <script src='./lib/evaluation-buttons.js'></script>
+
+</head>
+
+<body>
+  <!--   HEADER-->
+    <header class="main-header" >
+      <div class="container">
+          <div class="row start-xm start-sm start-md start-lg  middle-sm middle-md middle-md middle-lg ">
+              <div  id="logo" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 center-xs center-sm center-md center-lg">
+                <img src="./images/logo.PNG" alt="Logo"/>
+              </div>
+              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 center-xs center-sm center-md center-lg">
+                <h1>JavaScript Tutorial </h1>
+              </div>
+              <div id="search" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 center-xs center-sm center-md center-lg">
+                <form action="https://www.google.com/">
+                    <input type="text" >
+                    <input type="submit" value="">
+                </form>
+              </div>
+              <div id ="mail" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 center-xs center-sm center-md center-lg">
+                <img src="./images/Email.PNG" alt="E-mail"/> 
+              </div>
+          </div>
+      </div> 
+      <nav class="main-nav">
+          <ul>
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="variables.html"><span id="current-page"> Variables</span></a></li>
+              <li> <a href="operations.html">Operations</a></li>
+              <li> <a href="loops.html">Loops</a></li>
+              <li> <a href="reference.html">Reference type</a></li>
+          </ul>
+      </nav>
+    </header> 
+    <!--MAIN-->
+   <div class="container m-b-0 is-fluid">
+         <div class="m-t m-b-lg" style="position: relative">
+        <div class="article-title m-b-md">
+        <h1 class="title is-2 m-t-0 m-b-xs">Declaring JavaScript Variables: var, let and const</h1>
+        <div class="article-content">
+        <p>Defining data and then manipulating that data has always been the basis of programming. What is programming without data? I assume you guessed "nothing." Data types are basically either <strong>Variables</strong> or <strong>Constants</strong>. </p>
+        <ul>
+        <li>Variables can be changed</li>
+        <li>Constants remain the same</li>
+        </ul>
+        <p>Where variables can be changed, constants remain the same. In this article, we will discuss the various ways of creating variables in JavaScript. </p>
+        <p>This may seem like a simple topic, but there are subtle nuances to creating variables in JavaScript that are important to know.</p>
+        <h2 id="toc-what-are-variables-">#<a href="#toc-what-are-variables-">What are Variables?</a></h2>
+        <p>Variables in JavaScript are containers which hold reusable data. They are like cups filled with stuff, and this stuff can be used over and over again depending on whichever way we choose. Before ES2015, JavaScript variables were solely declared using the <code>var</code> keyword.</p>
+        <pre class="language-js" data-title="js">
+            <code class="language-js">
+        <span class="token keyword">var</span> x<span class="token punctuation">;</span>
+        <span class="token keyword">var</span> y<span class="token punctuation">;</span>
+        <span class="token keyword">var</span> z<span class="token punctuation">;</span>
+         </code>
+        </pre>
+        <p>The above code corresponds to variable <code>x</code>, variable <code>y</code>, and variable <code>y</code>. We are declaring these variables. </p>
+        <p>Notice we are not assigning a value to these variables just yet. We are only saying they should exist. If you were to look at the value of each variable here, it would be <code>undefined</code>.</p>
+        <h3 id="toc-declaring-variables-in-es2015">Declaring Variables in ES2015</h3>
+        <p>ES2015 is the updated version of JavaScript (also known as ECMAScript). The more lax term for ES2015 is ES6. </p>
+        <p>In ES2015, two other ways to declare variables were introduced. They are <code>let</code> and <code>const</code>. We shall discuss these types in later parts of this lesson.</p>
+        <h2 id="toc-using-variables"># <a href="#toc-using-variables">Using Variables</a></h2>
+        <p>Variable are like containers in JavaScript. Using variables to store data is the foundation of the language, and it is done in three distinct parts.</p>
+        <ol>
+        <li><strong>Variable Declaration</strong>: Here the variable is registered in its corresponding scope, the scope of a variable is simply "where the variable can be used." We'll be talking more about scope in the next lesson.</li>
+        </ol>
+        <p>These are examples of variable declarations:</p>
+        <pre class="language-js" data-title="js"><code class="language-js">
+        <span class="token keyword">var</span> x<span class="token punctuation">;</span>
+        <span class="token keyword">var</span> car<span class="token punctuation">;</span>
+        <span class="token keyword">var</span> moto<span class="token punctuation">;</span></code></pre>
+        <ol>
+        <li><p><strong>Variable Initialization</strong>: This usually occurs when a variable is declared. Here the variable is assigned a memory or <em>space</em> by the JavaScript engine. Because of this, once a variable is declared, it takes a value of <code>undefined</code> even before assignment.</p>
+        </li>
+        <li><p><strong>Variable Assignment</strong>: Variable assignment is usually the most important step when using a variable. Here the variable is assigned data which is a value using the assignment operator "=". Values in JavaScript take one of the standard JavaScript datatypes which are:</p>
+        </li>
+        <li><p>String </p>
+        </li>
+        <li><p>Number </p>
+        </li>
+        <li><p>Boolean </p>
+        </li>
+        <li><p>Null</p>
+        </li>
+        <li><p>Undefined</p>
+        </li>
+        <li><p>Any of the complex data structures (<strong>Array and Objects</strong>)</p>
+        </li>
+        </ol>
+        <pre class="language-js" data-title="js">
+            <code class="language-js">
+        <span class="token keyword">var</span> x<span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>                         <span class="token comment">// Number</span>
+        <span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">"Krystyna"</span><span class="token punctuation">;</span>           <span class="token comment">// String</span>
+        <span class="token keyword">var</span> developer <span class="token operator">=</span> <span class="token boolean">true</span> <span class="token operator">|</span>  <span class="token boolean">false</span><span class="token punctuation">;</span>  <span class="token comment">// Boolean</span>
+        <span class="token keyword">var</span> location  <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>          <span class="token comment">// Null</span>
+        <span class="token keyword">var</span> blue<span class="token punctuation">;</span>                     <span class="token comment">// undefined</span></code></pre>
+        <p>The syntax for assigning datatypes can be seen above with only strings having single or double quotes. Also boolean values are either true or false.</p>
+        <h2 id="toc-naming-variables">#
+        <a href="#toc-naming-variables">Naming Variables</a>
+        </h2>
+        <p>When naming variables in JavaScript, there are certain rules to be followed, they are:</p>
+        <ul>
+        <li>Names should begin with lowercase string.</li>
+        <li>Names cannot contain symbols or begin with symbols.</li>
+        <li>Names cannot begin with a number.</li>
+        <li>Names can contain a mix of uppercase strings, lowercase strings, and numbers.</li>
+        </ul>
+        <p>Examples of variable names are:</p>
+        <pre class="language-js" data-title="js">
+        <code class="language-js">
+        <span class="token comment">// VALID</span>
+        <span class="token keyword">var</span> man<span class="token punctuation">;</span>     
+        <span class="token keyword">var</span> woman5<span class="token punctuation">;</span>  
+        <span class="token keyword">var</span> blackCar<span class="token punctuation">;</span> <span class="token comment">// This is the best way to name variables with several words</span>
+
+
+        <span class="token comment">// INVALID</span>
+        <span class="token keyword">var</span> <span class="token number">1</span>girl<span class="token punctuation">;</span>   
+        <span class="token keyword">var</span> <span class="token operator">-</span>girl<span class="token punctuation">;</span>   </code></pre>
+        <p>Multiple variables in JavaScript can also be chained, while separated by a comma.</p>
+        <pre class="language-js" data-title="js"><code class="language-js"><span class="token keyword">var</span> x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">;</span> </code></pre>
+        <p>Assigning values:</p>
+        <pre class="language-js" data-title="js"><code class="language-js"><span class="token keyword">var</span> x <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">,</span> y <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">,</span> z <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span>
+        
+        <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">,</span>
+          b <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">,</span>
+          c <span class="token operator">=</span> <span class="token number">90</span><span class="token punctuation">;</span></code></pre>
+        <p>Variables in JavaScript can also evaluate simple mathematical expressions and assume its value. Here:</p>
+        <pre class="language-js" data-title="js"><code class="language-js"><span class="token keyword">var</span> x <span class="token operator">=</span> <span class="token number">5</span> <span class="token operator">+</span> <span class="token number">10</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 17</span></code></pre>
+        <p>After the first declaration of a variable in the global scope, subsequent declarations of a variable name using <code>var</code> is possible. </p>
+        <p>Here:</p>
+        <pre class="language-js" data-title="js"><code class="language-js"><span class="token keyword">var</span> age <span class="token operator">=</span> <span class="token number">32</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> age <span class="token operator">=</span> <span class="token number">35</span><span class="token punctuation">;</span>
+        
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span> <span class="token comment">// 35</span></code></pre>
+        <p>Now we shall have a look at the other variable types, <code>let</code> and <code>const</code>.</p>
+        <h2 id="toc-let">#<a href="#toc-let">Let</a>
+        </h2>
+        <p>Introduced in ES2015 (aka ES6), the variable type <code>let</code> shares a lot of similarities with <code>var</code> but unlike <code>var</code> has scope constraints. <code>let</code> is constrained to whichever scope it is declared in. Its declaration and assignment are similar to <code>var</code>. <code>let</code> was introduced to mitigate issues posed by variables scope which developers face during development. </p>
+        <p>In short, <code>let</code> helps us by making it easier to see where variables live in our code.</p>
+        <p>In declaring variables with <code>let</code>:</p>
+        <pre class="language-js" data-title="js"><code class="language-js"><span class="token keyword">let</span> x<span class="token punctuation">;</span>
+        <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span></code></pre>
+        <p>Multiple declarations can also be made with <code>let</code>:</p>
+        <pre class="language-js" data-title="js"><code class="language-js"><span class="token keyword">let</span> x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">;</span>
+        <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">50</span><span class="token punctuation">,</span> y <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">,</span> z <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span></code></pre>
+        <p>Unlike <code>var</code>, variables cannot be re-declared using <code>let</code>, trying to do that will throw a Syntax error: Identifier has already been declared.</p>
+        <pre class="language-js" data-title="js"><code class="language-js"><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+        <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">50</span><span class="token punctuation">;</span>
+        
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// SyntaxError: identifier "x" has already been declared.</span></code></pre>
+        <p>This modification to <code>var</code> goes a long way to providing a level of organization while managing large data structures as it is safer knowing that your variable cannot be reassigned anywhere in its scope.</p>
+        <p>We'll be examining more about <code>let</code> and scope in the next lesson.</p>
+        <h2 id="toc-const">#<a href="#toc-const">Const</a>
+        </h2>
+        <p>Also introduced in ES2015, <code>const</code>, is a variable type (not really, but you’ll find out now) assigned to data whose value cannot and will not be changed throughout the script. Now, this is more strict. <code>const</code> is also limited to the scope which it operates. <code>const</code> is declared like <code>var</code> and <code>let</code>.</p>
+        <p>Use <code>const</code> when you are sure a variable will not be redeclared. </p>
+        <pre class="language-js" data-title="js"><code class="language-js"><span class="token keyword">const</span> x <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span> 
+        <span class="token keyword">const</span> y <span class="token operator">=</span> <span class="token string">'boy'</span><span class="token punctuation">;</span>
+        <span class="token keyword">const</span> z <span class="token operator">=</span> <span class="token string">'developer'</span><span class="token punctuation">;</span></code></pre>
+        <p>Note: <strong>A variable declared with</strong> <code>**const**</code> <strong>MUST be initialized.</strong></p>
+        <pre class="language-js" data-title="js"><code class="language-js"><span class="token keyword">const</span> x<span class="token punctuation">;</span> <span class="token comment">// SyntaxError: missing initializer</span></code></pre>
+        <p>Like <code>var</code> and <code>let</code>, variables declared with <code>const</code> can also be chained with commas separating each variable:</p>
+        <pre class="language-js" data-title="js"><code class="language-js"><span class="token keyword">const</span> x <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">,</span> y <span class="token operator">=</span> <span class="token number">50</span><span class="token punctuation">,</span> man <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span></code></pre>
+        <p>For different variable names, these variable types can all be used together depending on the development process.</p>
+        <h3 id="toc-changing-const">Changing <code>const</code></h3>
+        <p>You are not allowed to change the value of a variable declared with <code>const</code>. </p>
+        <pre class="language-js" data-title="js"><code class="language-js"><span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'Krystyna'</span><span class="token punctuation">;</span>
+        
+        name <span class="token operator">=</span> <span class="token string">'Daniel'</span><span class="token punctuation">;</span> <span class="token comment">// Uncaught TypeError: Assignment to constant variable.</span></code></pre>
+        <p>However, if you declare an object as <code>const</code>, you are able to change the properties.</p>
+        <pre class="language-js" data-title="js"><code class="language-js"><span class="token keyword">const</span> person <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+        
+        person<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'Krystyna'</span><span class="token punctuation">;</span> <span class="token comment">// no error</span></code></pre>
+        <h2 id="toc-which-to-use">#<a href="#toc-which-to-use">Which to Use</a>
+        </h2>
+        <p>When declaring variables, it is good practice to <strong>avoid using var</strong>. Always lean towards <code>let</code> or <code>const</code> based on the following rules.</p>
+        <ul>
+        <li>Use <code>let</code> when we will be changing the value of the variable</li>
+        <li>Use <code>const</code> when you are sure that variable won't change</li>
+        </ul>
+        <p>Using both <code>let</code> and <code>const</code> will keep our variables in the right scope and make our code easier to manage.</p>
+        <h2 id="toc-conclusion">#<a href="#toc-conclusion">Conclusion</a>
+        </h2>
+        <p>In this article, we have understood how variables are declared in JavaScript, and the differences between the variable types - <code>var</code>, <code>let</code> and <code>const</code>. </p>
+        <p>These variable types are unique in their own way and serve to make code development efficient, however, it is advised to use <code>let</code>
+        whenever possible and <code>const</code> whenever the value of the variable is to remain constant.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+    
+   <!--FOOTER-->
+<footer class="main-footer">
+    <div class="container">
+        <div class="row start-xm start-sm start-md start-lg  middle-sm middle-md middle-md middle-lg ">
+            <div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+              <h2>About Us</h2>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+                <h2>Contact Us </h2>
+            </div>
+            <div  class="col-xs-4 col-sm-4 col-md-4 col-lg-4 center-xs center-sm center-md center-lg">
+              <h2>Share this :</h2>
+            </div>
+            <div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+              <img src="./images/facebook.png" alt="Facebook" /> 
+            </div>
+            <div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+                <img src="./images/twitter.png" alt="twitter" /> 
+              </div>
+        </div>
+    </div> 
+    <div class="copyright">
+        <p>Copyright&#169;HackYourFuture2020</p>
+    </div>
+
+</footer>
+</body>
+
+</html>
+
+ 

@@ -23,14 +23,12 @@ img {
 /* HEADER */
 
 .main-header {
-  font-family: "Proza Libre", sans-serif;
+  font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif, solid;
   color: #f69604;
   background: #1c1160;
 }
 
-h1 {
-  font-size: 30px;
-}
+
 #search {
   max-width: 400px;
   margin: 5px auto;
@@ -42,7 +40,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   border-radius: 50px;
-  background-color: #fff;
+  background-color: #e5e5e5;
   border: 1px solid rgb(0, 0, 0);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.06);
 }
@@ -55,6 +53,7 @@ h1 {
   border: none;
   border-radius: 50px;
   font-size: 18px;
+  background-color: #e5e5e5;
 }
 
 #search form input[type="submit"] {
@@ -73,7 +72,7 @@ h1 {
 
 #search form input[type="submit"]:hover {
   background-color: #1c1160;
-  color: white;
+  color:#e5e5e5;
 }
 
 #mail {
@@ -86,7 +85,7 @@ h1 {
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
   font-size: 20px;
-  color: #fff;
+  color:#e5e5e5;
   background-color: #f69604;
 }
 
@@ -98,10 +97,10 @@ h1 {
 }
 .main-nav a {
   text-decoration: none;
-  color: #fff;
+  color:#e5e5e5;
 }
 #current-page {
-  color: #000000;
+  color: #363636;
 }
 .main-nav a:hover {
   background-color: #1c1160;
@@ -113,14 +112,16 @@ h1 {
   text-align: justify;
 }
 .section-text h3 {
+  font-size: 2,5 rem;
   color: #1c1160;
   margin-top: 3rem;
   padding-bottom: 1rem;
 }
 .section-text p {
+  font-family: font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   text-align: justify;
   margin-right: 12rem;
-
+  color: #363636;
   font: 18px;
   line-height: 2rem;
 }
@@ -130,8 +131,8 @@ h1 {
   background-color: #1c1160;
 }
 h2 {
-  font-family: "Proza Libre", sans-serif;
-  font-size: 20px;
+  font-family: font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 2.5 rem;
   color: #f69604;
 }
 .main-footer img {
@@ -143,7 +144,7 @@ h2 {
 .copyright {
   background-color: #f69604;
   text-align: center;
-  font-family: "Proza Libre", sans-serif;
+  font-family: font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 12px;
 }
 /* JS  SNIPPET */
@@ -152,4 +153,299 @@ h2 {
   text-align: left;
   margin-left: 20rem;
   margin-bottom: 3rem;
+}
+/* MAIN*/
+
+.article-content h1 a, .article-content h2 a {
+  color: #363636;
+  font-size: 2.5rem;
+  transition: color .3s ease;
+  position: relative;
+  margin-top: 100px!important;
+}
+.title.is-2 {
+  font-size: 2.5rem;
+  color: #363636;
+}
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+  color: #363636;
+  font-weight: 600;
+
+line-height: 1.4!important;
+}
+.m-b-xs {
+  margin-bottom: 5px!important;
+}
+.m-t-0 {
+  margin-top: 0!important;
+}
+.subtitle, .title {
+  word-break: break-word;
+}
+
+*, :after, :before {
+ 
+  box-sizing: inherit;
+}
+
+.article.is-course .column.is-middle .article-content {
+  max-width: 900px;
+}
+.article-content {
+ 
+  line-height: 1.68;
+  color: #3b454e;
+}
+.article-content, main {
+  position: relative;
+}
+div {
+  display: block;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+ul {
+  display: block;
+ 
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.content ul {
+  list-style: disc outside;
+  margin-left: 2em;
+  margin-top: 1em;
+}
+.content li+li {
+  margin-top: .25em;
+}
+.article-content li {
+  line-height: 1.7;
+}
+
+pre:not([class*=CodeMirror]):not(:last-child) {
+  margin-top: 40px!important;
+  margin-bottom: 45px!important;
+}
+pre:not([class*=CodeMirror]) {
+  border-radius: 20px;
+  border: none;
+  position: relative;
+  padding: 100px 70px 70px;
+  z-index: 1;
+}
+code[class*=language-], pre, pre[class*=language-], pre code {
+  line-height: 1.9;
+  
+}
+code[class*=language-], pre[class*=language-] {
+  font-family: Source Code Pro,Consolas,monospace;
+ 
+  tab-size: 2;
+}
+:not(pre)>code[class*=language-], pre[class*=language-] {
+  background: #2d2d2d;
+}
+pre[class*=language-] {
+  
+  margin: .5em 0;
+  overflow: auto;
+}
+code[class*=language-], pre[class*=language-] {
+  color: #ccc;
+  text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    hyphens: none;
+}
+code, pre {
+ 
+  -webkit-font-smoothing: auto;
+}
+pre:not([class*=CodeMirror]) {
+  border-radius: 20px;
+  border: none;
+  position: relative;
+  padding: 100px 70px 70px;
+  z-index: 1;
+}
+
+
+.article-content h1:before, .article-content h2:before {
+ 
+    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #dab437;
+    display: flex;
+    opacity: .8;
+    position: absolute;
+    width: 30px;
+    top: -3px;
+    bottom: 0;
+    transition: opacity .3s ease;
+  }
+*, :after, :before {
+ 
+  box-sizing: inherit;
+}
+::selection {
+  color: #665213;
+  background: #f2e4b9;
+}
+
+a {
+ 
+  cursor: pointer;
+  text-decoration: none;
+}
+.content h2 {
+  
+  margin-bottom: .5714em;
+}
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+
+  font-weight: 600;
+ 
+}
+h1, h2, h3, h4, h5, h6 {
+  
+  line-height: 1.4!important;
+}
+html {
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+    overflow-x: hidden;
+    text-size-adjust: 100%;
+}
+
+.article-content ol code, .article-content p code, .article-content ul code {
+  font-size: 14px;
+  background: #f0f0f0;
+  color: #f69604;
+  border-radius: 2px;
+  font-family: Source Code Pro,Consolas,monospace;
+  display: inline-block;
+  padding: 1px 6px;
+}
+code {
+  font-weight: 400;
+}
+code, pre {
+  
+  -webkit-font-smoothing: auto;
+  
+}
+pre:not([class*=CodeMirror]):not(:last-child) {
+  margin-top: 40px!important;
+  margin-bottom: 45px!important;
+}
+pre:not([class*=CodeMirror]) {
+  border-radius: 20px;
+  border: none;
+  position: relative;
+  padding: 100px 70px 70px;
+  z-index: 1;
+}
+
+code[class*=language-], pre, pre[class*=language-], pre code {
+  line-height: 1.9;
+}
+code[class*=language-], pre[class*=language-] {
+  font-family: Source Code Pro,Consolas,monospace;
+ 
+  tab-size: 2;
+}
+pre[class*=language-] {
+ 
+  margin: .5em 0;
+  overflow: auto;
+}
+code[class*=language-], pre[class*=language-] {
+  color: #ccc;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  hyphens: none;
+}
+code, pre {
+  
+  -webkit-font-smoothing: auto;
+}
+pre {
+  display: block;
+ 
+}
+pre:not([class*=CodeMirror]):before {
+  content: attr(data-title);
+  position: absolute;
+  padding: 2px 10px 3px;
+  font-size: 12px;
+  top: 40px;
+  right: 45px;
+  text-align: right;
+  color: #444;
+  font-weight: 700;
+  letter-spacing: .8px;
+  opacity: .8;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background: #ddd;
+}
+pre::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+pre::-webkit-scrollbar, pre::-webkit-scrollbar-track {
+  background-color: #4d4c4c;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+pre::-webkit-scrollbar-thumb {
+  background-color: #111;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.token.atrule, .token.builtin, .token.important, .token.keyword, .token.selector {
+  color: #f69604;
+}
+span {
+  font-style: inherit;
+  font-weight: inherit;
+}
+token.entity, .token.operator, .token.url {
+  color: #67cdcc;
+}
+.token.attr-value, .token.char, .token.regex, .token.string, .token.variable {
+  color: #0d91e9;
+}
+.token.boolean, .token.function, .token.number {
+  color: #ee3405;
+}
+@media screen and (max-width: 1023px)
+constructed stylesheet
+code[class*=language-], pre, pre[class*=language-], pre code {
+    font-size: 16px;
+}
+@media screen and (max-width: 1300px)
+constructed stylesheet
+.article-content h1 a:before, .article-content h2 a:before {
+    left: -20px;
+    font-size: 20px;
 }
