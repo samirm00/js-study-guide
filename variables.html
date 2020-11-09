@@ -73,7 +73,7 @@
         </ul>
         <p>Where variables can be changed, constants remain the same. In this article, we will discuss the various ways of creating variables in JavaScript. </p>
         <p>This may seem like a simple topic, but there are subtle nuances to creating variables in JavaScript that are important to know.</p>
-        <h2 id="toc-what-are-variables-">#<a href="#toc-what-are-variables-">What are Variables?</a></h2>
+        <h2 id="toc-what-are-variables-"># <a href="#toc-what-are-variables-">What are Variables?</a></h2>
         <p>Variables in JavaScript are containers which hold reusable data. They are like cups filled with stuff, and this stuff can be used over and over again depending on whichever way we choose. Before ES2015, JavaScript variables were solely declared using the <code>var</code> keyword.</p>
         <pre class="language-js" data-title="js">
             <code class="language-js">
@@ -163,7 +163,7 @@
         
         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span> <span class="token comment">// 35</span></code></pre>
         <p>Now we shall have a look at the other variable types, <code>let</code> and <code>const</code>.</p>
-        <h2 id="toc-let">#<a href="#toc-let">Let</a>
+        <h2 id="toc-let"># <a href="#toc-let">Let</a>
         </h2>
         <p>Introduced in ES2015 (aka ES6), the variable type <code>let</code> shares a lot of similarities with <code>var</code> but unlike <code>var</code> has scope constraints. <code>let</code> is constrained to whichever scope it is declared in. Its declaration and assignment are similar to <code>var</code>. <code>let</code> was introduced to mitigate issues posed by variables scope which developers face during development. </p>
         <p>In short, <code>let</code> helps us by making it easier to see where variables live in our code.</p>
@@ -180,7 +180,7 @@
         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// SyntaxError: identifier "x" has already been declared.</span></code></pre>
         <p>This modification to <code>var</code> goes a long way to providing a level of organization while managing large data structures as it is safer knowing that your variable cannot be reassigned anywhere in its scope.</p>
         <p>We'll be examining more about <code>let</code> and scope in the next lesson.</p>
-        <h2 id="toc-const">#<a href="#toc-const">Const</a>
+        <h2 id="toc-const"># <a href="#toc-const">Const</a>
         </h2>
         <p>Also introduced in ES2015, <code>const</code>, is a variable type (not really, but you’ll find out now) assigned to data whose value cannot and will not be changed throughout the script. Now, this is more strict. <code>const</code> is also limited to the scope which it operates. <code>const</code> is declared like <code>var</code> and <code>let</code>.</p>
         <p>Use <code>const</code> when you are sure a variable will not be redeclared. </p>
@@ -201,7 +201,7 @@
         <pre class="language-js" data-title="js"><code class="language-js"><span class="token keyword">const</span> person <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
         
         person<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'Krystyna'</span><span class="token punctuation">;</span> <span class="token comment">// no error</span></code></pre>
-        <h2 id="toc-which-to-use">#<a href="#toc-which-to-use">Which to Use</a>
+        <h2 id="toc-which-to-use"># <a href="#toc-which-to-use">Which to Use</a>
         </h2>
         <p>When declaring variables, it is good practice to <strong>avoid using var</strong>. Always lean towards <code>let</code> or <code>const</code> based on the following rules.</p>
         <ul>
@@ -209,7 +209,7 @@
         <li>Use <code>const</code> when you are sure that variable won't change</li>
         </ul>
         <p>Using both <code>let</code> and <code>const</code> will keep our variables in the right scope and make our code easier to manage.</p>
-        <h2 id="toc-conclusion">#<a href="#toc-conclusion">Conclusion</a>
+        <h2 id="toc-conclusion"># <a href="#toc-conclusion">Conclusion</a>
         </h2>
         <p>In this article, we have understood how variables are declared in JavaScript, and the differences between the variable types - <code>var</code>, <code>let</code> and <code>const</code>. </p>
         <p>These variable types are unique in their own way and serve to make code development efficient, however, it is advised to use <code>let</code>
