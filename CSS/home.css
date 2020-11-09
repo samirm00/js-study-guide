@@ -183,11 +183,6 @@ line-height: 1.4!important;
   word-break: break-word;
 }
 
-*, :after, :before {
- 
-  box-sizing: inherit;
-}
-
 .article.is-course .column.is-middle .article-content {
   max-width: 900px;
 }
@@ -300,10 +295,7 @@ pre:not([class*=CodeMirror]) {
     bottom: 0;
     transition: opacity .3s ease;
   }
-*, :after, :before {
- 
-  box-sizing: inherit;
-}
+
 ::selection {
   color: #665213;
   background: #f2e4b9;
@@ -438,6 +430,11 @@ token.entity, .token.operator, .token.url {
 .token.boolean, .token.function, .token.number {
   color: #ee3405;
 }
+*, :after, :before {
+ 
+  box-sizing: inherit;
+}
+
 @media screen and (max-width: 1023px)
 constructed stylesheet
 code[class*=language-], pre, pre[class*=language-], pre code {
