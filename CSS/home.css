@@ -23,11 +23,12 @@ img {
 /* HEADER */
 
 .main-header {
-  font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif, solid;
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial,
+    sans-serif, solid;
   color: #f69604;
   background: #1c1160;
 }
-
 
 #search {
   max-width: 400px;
@@ -72,7 +73,7 @@ img {
 
 #search form input[type="submit"]:hover {
   background-color: #1c1160;
-  color:#e5e5e5;
+  color: #e5e5e5;
 }
 
 #mail {
@@ -85,7 +86,7 @@ img {
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
   font-size: 20px;
-  color:#e5e5e5;
+  color: #e5e5e5;
   background-color: #f69604;
 }
 
@@ -97,7 +98,7 @@ img {
 }
 .main-nav a {
   text-decoration: none;
-  color:#e5e5e5;
+  color: #e5e5e5;
 }
 #current-page {
   color: #363636;
@@ -112,13 +113,15 @@ img {
   text-align: justify;
 }
 .section-text h3 {
-  font-size: 2,5 rem;
+  font-size: 2, 5rem;
   color: #1c1160;
   margin-top: 3rem;
   padding-bottom: 1rem;
 }
 .section-text p {
-  font-family: font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
   text-align: justify;
   margin-right: 12rem;
   color: #363636;
@@ -131,8 +134,10 @@ img {
   background-color: #1c1160;
 }
 h2 {
-  font-family: font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-size: 2.5 rem;
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  font-size: 2.5rem;
   color: #f69604;
 }
 .main-footer img {
@@ -144,10 +149,12 @@ h2 {
 .copyright {
   background-color: #f69604;
   text-align: center;
-  font-family: font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
   font-size: 12px;
 }
-@media( max-width:1170px){
+@media (max-width: 1170px) {
   .main-nav {
     text-align: center;
     margin-top: 1.5rem;
@@ -155,10 +162,10 @@ h2 {
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     font-size: 18px;
-    color:#e5e5e5;
+    color: #e5e5e5;
     background-color: #f69604;
   }
-  
+
   .main-nav li {
     display: inline;
     margin: 0.7rem;
@@ -170,13 +177,15 @@ h2 {
     text-align: center;
   }
   .section-text h3 {
-    font-size: 2,5 rem;
+    font-size: 2, 5rem;
     color: #1c1160;
     margin-top: 2rem;
     padding-bottom: 2rem;
   }
   .section-text p {
-    font-family: font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial,
+      sans-serif;
     text-align: justify;
     margin-right: 0.2rem;
     color: #363636;
@@ -184,8 +193,10 @@ h2 {
     line-height: 2rem;
   }
   h2 {
-    font-family: font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-size: 1rem ;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial,
+      sans-serif;
+    font-size: 1rem;
     color: #f69604;
   }
   .main-footer img {
@@ -193,11 +204,11 @@ h2 {
     padding-top: 5px;
     padding-bottom: 5px;
   }
-  .code{
-    width: 60vw;;
+  .code {
+    width: 60vw;
     text-align: left;
     margin-left: 0.2rem;
-    margin-right:0.2rem;
+    margin-right: 0.2rem;
     margin-bottom: 3rem;
   }
 }
@@ -208,32 +219,39 @@ h2 {
   margin-left: 20rem;
   margin-bottom: 3rem;
 }
-/* MAIN*/
+/* VARIABLE PAGE*/
 
-.article-content h1 a, .article-content h2 a {
+.article-content h1 a,
+.article-content h2 a {
   color: #363636;
   font-size: 2.5rem;
-  transition: color .3s ease;
+  transition: color 0.3s ease;
   position: relative;
-  margin-top: 100px!important;
+  margin-top: 100px !important;
 }
 .title.is-2 {
   font-size: 2.5rem;
   color: #363636;
 }
-.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
   color: #363636;
   font-weight: 600;
 
-line-height: 1.4!important;
+  line-height: 1.4 !important;
 }
 .m-b-xs {
-  margin-bottom: 5px!important;
+  margin-bottom: 5px !important;
 }
 .m-t-0 {
-  margin-top: 0!important;
+  margin-top: 0 !important;
 }
-.subtitle, .title {
+.subtitle,
+.title {
   word-break: break-word;
 }
 
@@ -241,11 +259,11 @@ line-height: 1.4!important;
   max-width: 900px;
 }
 .article-content {
- 
   line-height: 1.68;
   color: #3b454e;
 }
-.article-content, main {
+.article-content,
+main {
   position: relative;
 }
 div {
@@ -260,7 +278,7 @@ p {
 }
 ul {
   display: block;
- 
+
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -281,148 +299,46 @@ li {
   margin-left: 2em;
   margin-top: 1em;
 }
-.content li+li {
-  margin-top: .25em;
+.content li + li {
+  margin-top: 0.25em;
 }
 .article-content li {
   line-height: 1.7;
 }
 
-pre:not([class*=CodeMirror]):not(:last-child) {
-  margin-top: 40px!important;
-  margin-bottom: 45px!important;
+pre:not([class*="CodeMirror"]):not(:last-child) {
+  margin-top: 40px !important;
+  margin-bottom: 45px !important;
 }
-pre:not([class*=CodeMirror]) {
+pre:not([class*="CodeMirror"]) {
   border-radius: 20px;
   border: none;
   position: relative;
   padding: 100px 70px 70px;
   z-index: 1;
 }
-code[class*=language-], pre, pre[class*=language-], pre code {
+code[class*="language-"],
+pre,
+pre[class*="language-"],
+pre code {
   line-height: 1.9;
-  
 }
-code[class*=language-], pre[class*=language-] {
-  font-family: Source Code Pro,Consolas,monospace;
- 
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: Source Code Pro, Consolas, monospace;
+
   tab-size: 2;
 }
-:not(pre)>code[class*=language-], pre[class*=language-] {
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
   background: #2d2d2d;
 }
-pre[class*=language-] {
-  
-  margin: .5em 0;
+pre[class*="language-"] {
+  margin: 0.5em 0;
   overflow: auto;
 }
-code[class*=language-], pre[class*=language-] {
-  color: #ccc;
-  text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-    hyphens: none;
-}
-code, pre {
- 
-  -webkit-font-smoothing: auto;
-}
-pre:not([class*=CodeMirror]) {
-  border-radius: 20px;
-  border: none;
-  position: relative;
-  padding: 100px 70px 70px;
-  z-index: 1;
-}
-
-
-.article-content h1:before, .article-content h2:before {
- 
-    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-    color: #dab437;
-    display: flex;
-    opacity: .8;
-    position: absolute;
-    width: 30px;
-    top: -3px;
-    bottom: 0;
-    transition: opacity .3s ease;
-  }
-
-::selection {
-  color: #665213;
-  background: #f2e4b9;
-}
-
-a {
- 
-  cursor: pointer;
-  text-decoration: none;
-}
-.content h2 {
-  
-  margin-bottom: .5714em;
-}
-.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
-
-  font-weight: 600;
- 
-}
-h1, h2, h3, h4, h5, h6 {
-  
-  line-height: 1.4!important;
-}
-html {
-  -webkit-font-smoothing: antialiased;
-  min-width: 300px;
-    overflow-x: hidden;
-    text-size-adjust: 100%;
-}
-
-.article-content ol code, .article-content p code, .article-content ul code {
-  font-size: 14px;
-  background: #f0f0f0;
-  color: #f69604;
-  border-radius: 2px;
-  font-family: Source Code Pro,Consolas,monospace;
-  display: inline-block;
-  padding: 1px 6px;
-}
-code {
-  font-weight: 400;
-}
-code, pre {
-  
-  -webkit-font-smoothing: auto;
-  
-}
-pre:not([class*=CodeMirror]):not(:last-child) {
-  margin-top: 40px!important;
-  margin-bottom: 45px!important;
-}
-pre:not([class*=CodeMirror]) {
-  border-radius: 20px;
-  border: none;
-  position: relative;
-  padding: 100px 70px 70px;
-  z-index: 1;
-}
-
-code[class*=language-], pre, pre[class*=language-], pre code {
-  line-height: 1.9;
-}
-code[class*=language-], pre[class*=language-] {
-  font-family: Source Code Pro,Consolas,monospace;
- 
-  tab-size: 2;
-}
-pre[class*=language-] {
- 
-  margin: .5em 0;
-  overflow: auto;
-}
-code[class*=language-], pre[class*=language-] {
+code[class*="language-"],
+pre[class*="language-"] {
   color: #ccc;
   text-align: left;
   white-space: pre;
@@ -430,15 +346,131 @@ code[class*=language-], pre[class*=language-] {
   word-break: normal;
   hyphens: none;
 }
-code, pre {
-  
+code,
+pre {
+  -webkit-font-smoothing: auto;
+}
+pre:not([class*="CodeMirror"]) {
+  border-radius: 20px;
+  border: none;
+  position: relative;
+  padding: 100px 70px 70px;
+  z-index: 1;
+}
+
+.article-content h1:before,
+.article-content h2:before {
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  color: #dab437;
+  display: flex;
+  opacity: 0.8;
+  position: absolute;
+  width: 30px;
+  top: -3px;
+  bottom: 0;
+  transition: opacity 0.3s ease;
+}
+
+::selection {
+  color: #665213;
+  background: #f2e4b9;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.content h2 {
+  margin-bottom: 0.5714em;
+}
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  font-weight: 600;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.4 !important;
+}
+html {
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  text-size-adjust: 100%;
+}
+
+.article-content ol code,
+.article-content p code,
+.article-content ul code {
+  font-size: 14px;
+  background: #f0f0f0;
+  color: #f69604;
+  border-radius: 2px;
+  font-family: Source Code Pro, Consolas, monospace;
+  display: inline-block;
+  padding: 1px 6px;
+}
+code {
+  font-weight: 400;
+}
+code,
+pre {
+  -webkit-font-smoothing: auto;
+}
+pre:not([class*="CodeMirror"]):not(:last-child) {
+  margin-top: 40px !important;
+  margin-bottom: 45px !important;
+}
+pre:not([class*="CodeMirror"]) {
+  border-radius: 20px;
+  border: none;
+  position: relative;
+  padding: 100px 70px 70px;
+  z-index: 1;
+}
+
+code[class*="language-"],
+pre,
+pre[class*="language-"],
+pre code {
+  line-height: 1.9;
+}
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: Source Code Pro, Consolas, monospace;
+
+  tab-size: 2;
+}
+pre[class*="language-"] {
+  margin: 0.5em 0;
+  overflow: auto;
+}
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #ccc;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  hyphens: none;
+}
+code,
+pre {
   -webkit-font-smoothing: auto;
 }
 pre {
   display: block;
- 
 }
-pre:not([class*=CodeMirror]):before {
+pre:not([class*="CodeMirror"]):before {
   content: attr(data-title);
   position: absolute;
   padding: 2px 10px 3px;
@@ -448,8 +480,8 @@ pre:not([class*=CodeMirror]):before {
   text-align: right;
   color: #444;
   font-weight: 700;
-  letter-spacing: .8px;
-  opacity: .8;
+  letter-spacing: 0.8px;
+  opacity: 0.8;
   text-transform: uppercase;
   border-radius: 5px;
   background: #ddd;
@@ -458,7 +490,8 @@ pre::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
-pre::-webkit-scrollbar, pre::-webkit-scrollbar-track {
+pre::-webkit-scrollbar,
+pre::-webkit-scrollbar-track {
   background-color: #4d4c4c;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -468,35 +501,48 @@ pre::-webkit-scrollbar-thumb {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.token.atrule, .token.builtin, .token.important, .token.keyword, .token.selector {
+.token.atrule,
+.token.builtin,
+.token.important,
+.token.keyword,
+.token.selector {
   color: #f69604;
 }
 span {
   font-style: inherit;
   font-weight: inherit;
 }
-token.entity, .token.operator, .token.url {
+token.entity,
+.token.operator,
+.token.url {
   color: #67cdcc;
 }
-.token.attr-value, .token.char, .token.regex, .token.string, .token.variable {
+.token.attr-value,
+.token.char,
+.token.regex,
+.token.string,
+.token.variable {
   color: #0d91e9;
 }
-.token.boolean, .token.function, .token.number {
+.token.boolean,
+.token.function,
+.token.number {
   color: #ee3405;
 }
-*, :after, :before {
- 
+*,
+:after,
+:before {
   box-sizing: inherit;
 }
 
-@media screen and (max-width: 1023px)
-constructed stylesheet
-code[class*=language-], pre, pre[class*=language-], pre code {
-    font-size: 16px;
+@media screen and (max-width: 1023px) constructed stylesheet code[class*=language-],
+  pre,
+  pre[class*=language-],
+  pre code {
+  font-size: 16px;
 }
-@media screen and (max-width: 1300px)
-constructed stylesheet
-.article-content h1 a:before, .article-content h2 a:before {
-    left: -20px;
-    font-size: 20px;
+@media screen and (max-width: 1300px) constructed stylesheet .article-content h1 a:before,
+  .article-content h2 a:before {
+  left: -20px;
+  font-size: 20px;
 }
