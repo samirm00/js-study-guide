@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Study Guide </title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=width-device"/>
+    <meta name="description" content="JavaScript study guide website">
+
+    <!-- you will need these styles and scripts -->
+    <!-- if you create new .html files, copy them into the head -->
+    <!-- if those files are in a folder, be sure to adjust all the paths! -->
+    <link rel="stylesheet" data-name="vs/editor/editor.main" href="./lib/monaco/min/vs/editor/editor.main.css"/>
+    <link rel="stylesheet" href="./CSS/home.css"/>
+    <link rel="stylesheet" href="./CSS/flexboxgrid.css"/>
+    <link rel="icon" href="./images/icon.png">
+
+    <script src='./lib/prettier/standalone.js'></script>
+    <script src='./lib/prettier/parser-babel.js'></script>
+
+    <script>var require = { paths: { 'vs': './lib/monaco/min/vs' } };</script>
+    <script src="./lib/monaco/min/vs/loader.js"></script>
+    <script src="./lib/monaco/min/vs/editor/editor.main.nls.js"></script>
+    <script src="./lib/monaco/min/vs/editor/editor.main.js"></script>
+
+    <script src='./lib/wc-js-snippet.js'></script>
+
+    <script src='./lib/evaluation-buttons.js'></script>
+
+</head>
+
+<body>
+  <!--   HEADER-->
+    <header class="main-header" >
+      <div class="container">
+          <div class="row start-xm start-sm start-md start-lg  middle-sm middle-md middle-md middle-lg ">
+              <div  id="logo" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 center-xs center-sm center-md center-lg">
+                <img src="./images/logo.PNG" alt="Logo"/>
+              </div>
+              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 center-xs center-sm center-md center-lg">
+                <h1>JavaScript Tutorial </h1>
+              </div>
+              <div id="search" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 center-xs center-sm center-md center-lg">
+                <form action="https://www.google.com/">
+                    <input type="text" >
+                    <input type="submit" value="">
+                </form>
+              </div>
+              <div id ="mail" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 center-xs center-sm center-md center-lg">
+                <img src="./images/Email.PNG" alt="E-mail"/> 
+              </div>
+          </div>
+      </div> 
+      <nav class="main-nav">
+          <ul>
+              <li> <a href="index.html">Home</a> </li>
+              <li> <a href="variables.html">Variables</a></li>
+              <li> <a href="operations.html">Operations</a></li>
+              <li> <a href="loops.html">Loops</a></li>
+              <li> <a href="reference.html"><span id="current-page">Reference type</span></a></li>
+          </ul>
+      </nav>
+    </header> 
+    <!--MAIN part -->
+    <main>
+        <section class="section-text">
+            <h3>What are the reference data type ?</h3>
+            <p>
+                <b>Reference (complex) type : </b> A reference value  is an instance of a specific reference type. In ECMAScript, reference types are structures used to group data and functionality together and are often incorrectly called "classes". Reference types are also sometimes called object definitions because they describe the properties and methods that objects should have. In other words, The reference type are collection of the primitive data (number, string, boolean, null and undefined) type.The reference type consists of objects , arrays (which are also objects),functions  (despite they are not objects), classes, maps and sets.It is important to remember that primitive data type are immutable and reference data type are mutable. 
+                </p>
+        </section>
+        <div class="code">
+          <js-snippet  src='./exersises/referenceType.js'></js-snippet>
+        </div>
+        <section class="section-text">
+          <h3>What is the deference between primitive data type and reference data type ?</h3>
+          <p>
+            Primitive data type are immutable and reference data type are mutable. Mutable objects are objects whose values can change once created, while immutable objects are those whose values cannot change once created. So when we modify the primitive type (string for example) value , a new string is created and the string name assigned to the new value, The same goes for all primitive type. But, with reference data type it is the opposite exactly , because , they have individual identities the can be modified , manipulated and applied methods on them.
+          </p> 
+        </section>
+        <div class="code">
+          <js-snippet  src='./exersises/referPrimitive.js'></js-snippet>
+        </div>
+        <section class="section-text">
+            <h3>Why it is important to distinguish between primitive and reference data types ?</h3>
+            <p>
+              Consider you have multiple threads working on the same object. You cannot predict the outcome of your code since the action of one thread will modify the object, the next thread using this object as a parameter will get totally different data and there’s no guarantee that the operation will be safe.
+
+              You cannot keep a copy of an object by assigning it to a variable first, then modifying the properties of the original object. The property values in the copy will also change.
+              
+              With immutable types, we know that a value’s state won’t be changed once we create it hence not resulting in unexpected logic in our code. For instance, we want to compare two email strings to authenticate a user. If a string was mutable and a part of our code had altered the email string inside some other method, then the user wouldn’t be able to log in.   
+            </p>   
+        </section>
+        <div class="code">
+          <js-snippet  src='./exersises/different.js'></js-snippet>
+        </div>
+        <section class="section-text">
+              <h3>The typeof Operator</h3>
+              <p>
+                You can use the JavaScript typeof operator to find the type of a JavaScript variable.The typeof operator returns the type of a variable or an expression.In addition , it is important to know that In JavaScript, a variable without a value, has the value undefined. The type is also undefined.
+              </p> 
+        </section> 
+        <div class="code">
+          <js-snippet  src='./exersises/Typeof.js'></js-snippet>
+        </div>
+        <section class="section-text">
+          <h3>Objects in JavaScript</h3>
+            <p>
+              In real life , any object has properties and methods , for instance , a car is an object and it has properties like weight and color, and methods like start and stop, the same goes for objects in JavaScript , they also have properties and methods , you can consider an object like a variable with many values, remember that objects are mutable so you can easy remove or add value(s) because it is possible to modify objects.
+              You can declare an object exactly like any other variable using <b>let</b> or <b>const</b> then a curly brackets and inside the curly brackets , you can put the object properties as key:value pair separated by comma<b>,</b> .You can access object properties in two ways the dot operator <b>"."</b> or by typing the property name inside square brackets <b>objectName["propertyName"]</b>. As for object methods ,they are actions that can be performed on objects.You can access the object methods using the dot operator <b>"."</b>. Note that the methods are ended with parentheses <b>( )</b>.
+            </p> 
+        </section> 
+        <div class="code">
+          <js-snippet  src='./exersises/object.js'></js-snippet>
+        </div>
+        <section class="section-text">
+          <h3>Arrays in JavaScript</h3>
+            <p>
+              JavaScript arrays are used to store multiple values in a single variable , just like objects ,in fact arrays are objects. An array can hold many values under a single name, and you can access the values by referring to an index number <b>[i]</b>.You can easily loops throw an array values and modify them (remember that arrays are objects).You can declare an array just like an object but use the square brackets <b>[ ]</b> instead of curly brackets.You can access an array element by referring to the index number <b>[i]</b> (note : the indexes start from 0). Arrays have properties and methods also but the deference between arrays and objects is arrays use numbers (indexes) to access its "elements", but Objects use names to access its "members". Ok so the question here is when to use arrays and when to use objects ? Well it is easy, you should use objects when you want the element names to be strings (text) and you should use arrays when you want the element names to be numbers.
+            </p> 
+        </section> 
+        <div class="code">
+          <js-snippet  src='./exersises/arrays.js'></js-snippet>
+        </div>
+        <section class="section-text">
+          <h3>Functions in JavaScript</h3>
+            <p>
+              A JavaScript function is a block of code designed to perform a particular task and it is executed when we (calls it).To declare a function all you have to do is type the name of the function followed by parentheses <b>( )</b> and then and arrow <b>=></b> and curly brackets <b>{ }</b>.The parentheses may include parameter names separated by commas<b>,</b> (parameter1, parameter2, ...) and The code to be executed, by the function, is placed inside curly brackets <b>{ }</b> ( note: Function parameters called Function arguments when the values received by the function when we called it). Ok, Why functions are important ? because you can define the code once, and use it many times.it is important to remember that, Variables declared within a JavaScript function, become <b>local</b> to the function.Local variables can only be accessed within the function.
+            </p> 
+        </section> 
+        <div class="code">
+          <js-snippet  src='./exersises/Fucntions.js'></js-snippet>
+        </div>
+        
+    </main>
+<!--FOOTER-->
+<footer class="main-footer">
+    <div class="container">
+        <div class="row start-xm start-sm start-md start-lg  middle-sm middle-md middle-md middle-lg ">
+            <div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+              <h2>About Us</h2>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+                <h2>Contact Us </h2>
+            </div>
+            <div  class="col-xs-4 col-sm-4 col-md-4 col-lg-4 center-xs center-sm center-md center-lg">
+              <h2>Share this :</h2>
+            </div>
+            <div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+              <img src="./images/facebook.png" alt="Facebook" /> 
+            </div>
+            <div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+                <img src="./images/twitter.png" alt="twitter" /> 
+              </div>
+        </div>
+    </div> 
+    <div class="copyright">
+        <p>Copyright&#169;HackYourFuture2020</p>
+    </div>
+
+</footer>
+</body>
+
+</html>
+
