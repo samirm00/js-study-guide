@@ -214,7 +214,7 @@ h2 {
 }
 /* JS  SNIPPET */
 .code {
-  width: 55vw;
+  width: 60vw;
   text-align: left;
   margin-left: 20rem;
   margin-bottom: 3rem;
@@ -535,6 +535,7 @@ token.entity,
   box-sizing: inherit;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 1023px) constructed stylesheet code[class*=language-],
   pre,
   pre[class*=language-],
@@ -545,4 +546,16 @@ token.entity,
   .article-content h2 a:before {
   left: -20px;
   font-size: 20px;
+=======
+@media screen and (max-width: 1023px)
+constructed stylesheet
+code[class*=language-], pre, pre[class*=language-], pre code {
+    font-size: 16px;
+}
+@media screen and (max-width: 1300px)
+constructed stylesheet
+.article-content h1 a:before, .article-content h2 a:before {
+    left: -20px;
+    font-size: 20px;
+>>>>>>> f70163a6848067fbc3fe37978174dc5179fb2369
 }
