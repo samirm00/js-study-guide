@@ -15,7 +15,7 @@ Repeater
 */
 
 /**
- * return a new repeated string cetrian times 
+ * return a new repeated string certain times 
  * @param {string} text -the string to be repeated 
  * @param {number} repeats -Number of times the string will be repeated 
  * @returns {string} a new string repeated {number} times 
