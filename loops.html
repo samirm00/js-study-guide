@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Study Guide </title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=width-device"/>
+    <meta name="description" content="JavaScript study guide website">
+
+    <!-- you will need these styles and scripts -->
+    <!-- if you create new .html files, copy them into the head -->
+    <!-- if those files are in a folder, be sure to adjust all the paths! -->
+    <link rel="stylesheet" data-name="vs/editor/editor.main" href="./lib/monaco/min/vs/editor/editor.main.css"/>
+    <link rel="stylesheet" href="./CSS/home.css"/>
+    <!--<link rel="stylesheet" href="./CSS/loop.css"/>-->
+    <link rel="stylesheet" href="./CSS/flexboxgrid.css"/>
+    <link rel="icon" href="./images/icon.png">
+
+    <script src='./lib/prettier/standalone.js'></script>
+    <script src='./lib/prettier/parser-babel.js'></script>
+
+    <script>var require = { paths: { 'vs': './lib/monaco/min/vs' } };</script>
+    <script src="./lib/monaco/min/vs/loader.js"></script>
+    <script src="./lib/monaco/min/vs/editor/editor.main.nls.js"></script>
+    <script src="./lib/monaco/min/vs/editor/editor.main.js"></script>
+
+    <script src='./lib/wc-js-snippet.js'></script>
+
+    <script src='./lib/evaluation-buttons.js'></script>
+
+</head>
+
+<body>
+  <!--   HEADER-->
+    <header class="main-header" >
+      <div class="container">
+          <div class="row start-xm start-sm start-md start-lg  middle-sm middle-md middle-md middle-lg ">
+              <div  id="logo" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 center-xs center-sm center-md center-lg">
+                <img src="./images/logo.PNG" alt="Logo"/>
+              </div>
+              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 center-xs center-sm center-md center-lg">
+                <h1>JavaScript Tutorial </h1>
+              </div>
+              <div id="search" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 center-xs center-sm center-md center-lg">
+                <form action="https://www.google.com/">
+                    <input type="text" >
+                    <input type="submit" value="">
+                </form>
+              </div>
+              <div id ="mail" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 center-xs center-sm center-md center-lg">
+                <img src="./images/Email.PNG" alt="E-mail"/> 
+              </div>
+          </div>
+      </div> 
+      <nav class="main-nav">
+          <ul>
+              <li> <a href="index.html">Home</a> </li>
+              <li> <a href="variables.html">Variables</a></li>
+              <li> <a href="operations.html">Operations</a></li>
+              <li> <a href="loops.html"><span id="current-page">Loops</span></a></li>
+              <li> <a href="reference.html">Reference type</a></li>
+          </ul>
+      </nav>
+    </header> 
+    <!--MAIN part -->
+    <main>
+        <section class="section-text">
+            <p>
+                Loops offer a quick and easy way to do something repeatedly. There are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times. (Note that it's possible that number could be zero!)
+The various loop mechanisms offer different ways to determine the start and end points of the loop. There are various situations that are more easily served by one type of loop over the others.
+            </p>
+        </section>
+        <section class="section-text">
+          <h3>While-loop</h3>
+            <p>
+            A while statement executes its statements as long as a specified condition evaluates to true.<br> 
+            A while statement looks as follows:
+            </p>
+           
+           
+            <div class="code2">
+              <js-snippet  src='./exersises/While_loop.js'></js-snippet>
+            </div>
+
+
+            <p>
+                If the <code>condition</code> becomes <code>false</code>, <code>statement</code> within the loop stops executing and control passes to the statement following the loop.<br>
+
+                The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops, and control is passed to the statement following while.<br>
+
+                To execute multiple statements, use a block statement ({ ... }) to group those statements.<br>
+            </p>
+            <h3>Example 1</h3>
+            <p>
+                The following while loop iterates as long as n is less than 3:
+            </p>
+
+
+
+            <div class="code2">
+              <js-snippet  src='./exersises/While_exp1.js'></js-snippet>
+            </div>
+
+
+
+            <p>
+                With each iteration, the loop increments n and adds that value to x. Therefore, x and n take on the following values:
+
+                After the first pass: n = 1 and x = 1
+                After the second pass: n = 2 and x = 3
+                After the third pass: n = 3 and x = 6
+                After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.
+            </p>
+            <h3>Example 2</h3>
+            <p>
+                Avoid infinite loops. Make sure the condition in a loop eventually becomes false—otherwise, the loop will never terminate! The statements in the following while loop execute forever because the condition never becomes false:
+            </p>
+
+
+
+            <div class="code2">
+              <js-snippet  src='./exersises/While_exp2.js'></js-snippet>
+            </div>
+
+
+
+        
+        </section>
+        <section class="section-text">
+            <h3>For-loop</h3>
+            <p>
+                A for loop repeats until a specified condition evaluates to false. The JavaScript for loop is similar to the Java and C for loop.<br>
+
+                A for statement looks as follows:
+            </p>  
+            
+            
+
+            <div class="code2">
+              <js-snippet  src='./exersises/For_loop.js'></js-snippet>
+            </div>
+
+
+
+            <p>
+                When a for loop executes, the following occurs:<br>
+
+                The initializing expression initialExpression, if any, is executed. This expression usually initializes one or more loop counters, but the syntax allows an expression of any degree of complexity. This expression can also declare variables.
+                The conditionExpression expression is evaluated. If the value of conditionExpression is true, the loop statements execute. If the value of condition is false, the for loop terminates. (If the condition expression is omitted entirely, the condition is assumed to be true.)
+                The statement executes. To execute multiple statements, use a block statement ({ ... }) to group those statements.
+                If present, the update expression incrementExpression is executed.
+                Control returns to Step 2.
+            </p>
+
+
+
+
+
+
+            <h3>Example 1</h3>
+
+
+            <div class="code2">
+              <js-snippet  src='./exersises/For_exp1.js'></js-snippet>
+            </div>
+
+            <h3>Example 2</h3>
+
+            <div class="code2">
+              <js-snippet  src='./exersises/For_exp2.js'></js-snippet>
+            </div>
+          
+        </section>
+        
+    </main>
+<!--FOOTER-->
+<footer class="main-footer">
+    <div class="container">
+        <div class="row start-xm start-sm start-md start-lg  middle-sm middle-md middle-md middle-lg ">
+            <div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+              <h2>About Us</h2>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+                <h2>Contact Us </h2>
+            </div>
+            <div  class="col-xs-4 col-sm-4 col-md-4 col-lg-4 center-xs center-sm center-md center-lg">
+              <h2>Share this :</h2>
+            </div>
+            <div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+              <img src="./images/facebook.png" alt="Facebook" /> 
+            </div>
+            <div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+                <img src="./images/twitter.png" alt="twitter" /> 
+              </div>
+        </div>
+    </div> 
+    <div class="copyright">
+        <p>Copyright&#169;HackYourFuture2020</p>
+    </div>
+
+</footer>
+</body>
+
+</html>
