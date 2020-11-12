@@ -42,7 +42,7 @@ _As a visitor_ : _I will see the website designed in Figma file_
 - Create a Figma file `Js-Study-Guide` 
 - Share the link with the collaborators.
 
-- 
+ 
 #### Figma file
 
 - Design the header and the footer 
