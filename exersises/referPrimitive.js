@@ -7,7 +7,7 @@ Primitive data type are immutable
 
 reference data type are mutable 
 
-- if we declare an arry [1.2,3.4] we can change the value of index[0]=1 for example , the array wil not change , only one inside it changed 
+- if we declare an array [1.2,3.4] we can change the value of index[0]=1 for example , the array wil not change , only one inside it changed 
 
 - also objects and arrays have properties and methods used to manipulated them 
 

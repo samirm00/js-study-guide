@@ -65,7 +65,7 @@
         <section class="section-text">
             <h3>What are the reference data type ?</h3>
             <p>
-                <b>Reference (complex) type : </b> A reference value  is an instance of a specific reference type. In ECMAScript, reference types are structures used to group data and functionality together and are often incorrectly called "classes". Reference types are also sometimes called object definitions because they describe the properties and methods that objects should have. In other words, The reference type are collection of the primitive data (number, string, boolean, null and undefined) type.The reference type consists of objects , arrays (which are also objects),functions  (despite they are not objects), classes, maps and sets.It is important to remember that primitive data type are immutable and reference data type are mutable. 
+                <b>Reference (complex) type : </b> A reference value  is an instance of a specific reference type. In ECMAScript, reference types are structures used to group data and functionality together and are often incorrectly called "classes". Reference types are also sometimes called object definitions because they describe the properties and methods that objects should have. In other words, The reference type are collection of the primitive data type (number, string, boolean, null and undefined) and/or reference data type ( for example an array can contains other arrays or objects or functions inside it ) .The reference type consists of objects , arrays (which are also objects),functions  (their type in function not objects but, we consider them as a special objects), classes, maps and sets.It is important to remember that primitive data type are immutable and reference data type are mutable. 
                 </p>
         </section>
         <div class="code">
@@ -77,6 +77,7 @@
             Primitive data type are immutable and reference data type are mutable. Mutable objects are objects whose values can change once created, while immutable objects are those whose values cannot change once created. So when we modify the primitive type (string for example) value , a new string is created and the string name assigned to the new value, The same goes for all primitive type. But, with reference data type it is the opposite exactly , because , they have individual identities the can be modified , manipulated and applied methods on them.
           </p> 
         </section>
+        
         <div class="code">
           <js-snippet  src='./exersises/referPrimitive.js'></js-snippet>
         </div>
@@ -85,8 +86,7 @@
             <p>
               Consider you have multiple threads working on the same object. You cannot predict the outcome of your code since the action of one thread will modify the object, the next thread using this object as a parameter will get totally different data and there’s no guarantee that the operation will be safe.
 
-              You cannot keep a copy of an object by assigning it to a variable first, then modifying the properties of the original object. The property values in the copy will also change.
-              
+              You cannot keep a copy of an object by assigning it to a variable first, then modifying the properties of the original object. The property values in the copy will also change.              
               With immutable types, we know that a value’s state won’t be changed once we create it hence not resulting in unexpected logic in our code. For instance, we want to compare two email strings to authenticate a user. If a string was mutable and a part of our code had altered the email string inside some other method, then the user wouldn’t be able to log in.   
             </p>   
         </section>
@@ -130,34 +130,33 @@
         <div class="code">
           <js-snippet  src='./exersises/Fucntions.js'></js-snippet>
         </div>
-        
     </main>
-<!--FOOTER-->
-<footer class="main-footer">
-    <div class="container">
-        <div class="row start-xm start-sm start-md start-lg  middle-sm middle-md middle-md middle-lg ">
-            <div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
-              <h2>About Us</h2>
-            </div>
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
-                <h2>Contact Us </h2>
-            </div>
-            <div  class="col-xs-4 col-sm-4 col-md-4 col-lg-4 center-xs center-sm center-md center-lg">
-              <h2>Share this :</h2>
-            </div>
-            <div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
-              <img src="./images/facebook.png" alt="Facebook" /> 
-            </div>
-            <div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
-                <img src="./images/twitter.png" alt="twitter" /> 
+  <!--FOOTER-->
+  <footer class="main-footer">
+      <div class="container">
+          <div class="row start-xm start-sm start-md start-lg  middle-sm middle-md middle-md middle-lg ">
+              <div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+                <h2>About Us</h2>
               </div>
-        </div>
-    </div> 
-    <div class="copyright">
-        <p>Copyright&#169;HackYourFuture2020</p>
-    </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+                  <h2>Contact Us </h2>
+              </div>
+              <div  class="col-xs-4 col-sm-4 col-md-4 col-lg-4 center-xs center-sm center-md center-lg">
+                <h2>Share this :</h2>
+              </div>
+              <div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+                <img src="./images/facebook.png" alt="Facebook" /> 
+              </div>
+              <div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+                  <img src="./images/twitter.png" alt="twitter" /> 
+                </div>
+          </div>
+      </div> 
+      <div class="copyright">
+          <p>Copyright&#169;HackYourFuture2020</p>
+      </div>
 
-</footer>
+  </footer>
 </body>
 
 </html>

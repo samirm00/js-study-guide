@@ -16,7 +16,7 @@ Reference data type are :
 6- maps 
 7- sets
 */
-// Primative data type
+// Primitive data type
 
 let firstName = "Samir ";                // String 
 console.log(typeof firstName);

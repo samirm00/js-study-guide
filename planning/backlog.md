@@ -6,19 +6,22 @@ A collection of user stories you can choose from.  Stories inside of each priori
 
 > these are necessary for basic usability
 
-- [ ] As a ... I want to ... so that ...
-  - _Given [context] when [a specific action is performed] then [a set of consequences should occur]_
+- A search box so the user can easily search for the information
+- General information about JavaScript , definition and so on 
+- Variables
+- Operations
+- loops
+- Reference data type
+- snippets example and exercises 
 
 ## Should-Haves
 
 > these will complete the user experience, but are not necessary
 
-- [ ] As a ... I want to ... so that ...
-  - _Given [context] when [a specific action is performed] then [a set of consequences should occur]_
+- the website should be simple and at the same time elegant and stylish
 
 ## Could-Haves
 
 > would be really cool ... if there's time
 
-- [ ] As a ... I want to ... so that ...
-  - _Given [context] when [a specific action is performed] then [a set of consequences should occur]_
+  

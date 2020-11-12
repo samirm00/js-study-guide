@@ -212,15 +212,7 @@ h2 {
     margin-bottom: 3rem;
   }
 
-  .code2 {
-    width: 60vw;
-    text-align: left;
-    margin-left: 0rem;
-    margin-right: 30rem;
-    margin-bottom: 3rem;
-    /*display: flex;
-    align-items: center;*/
-  }
+
 }
 /* JS  SNIPPET */
 .code {
@@ -230,15 +222,6 @@ h2 {
   margin-bottom: 3rem;
 }
 
-.code2 {
-  width: 60vw;
-  text-align: left;
-  margin-left: 0rem;
-  margin-right: 30rem;
-  margin-bottom: 3rem;
-  /*display: flex;
-  align-items: center;*/
-}
 /* VARIABLE PAGE*/
 
 .article-content h1 a,
@@ -555,18 +538,7 @@ token.entity,
   box-sizing: inherit;
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 1023px) constructed stylesheet code[class*=language-],
-  pre,
-  pre[class*=language-],
-  pre code {
-  font-size: 16px;
-}
-@media screen and (max-width: 1300px) constructed stylesheet .article-content h1 a:before,
-  .article-content h2 a:before {
-  left: -20px;
-  font-size: 20px;
-=======
+
 @media screen and (max-width: 1023px)
 constructed stylesheet
 code[class*=language-], pre, pre[class*=language-], pre code {
@@ -577,5 +549,5 @@ constructed stylesheet
 .article-content h1 a:before, .article-content h2 a:before {
     left: -20px;
     font-size: 20px;
->>>>>>> f70163a6848067fbc3fe37978174dc5179fb2369
+
 }

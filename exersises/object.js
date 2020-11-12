@@ -1,6 +1,6 @@
 "use strict";
 /*
-an object is a variable which has many values , it has properties and methodes used to minuplate the data 
+an object is a variable which has many values , it has properties and methods used to manipulate the data 
 
 */
 let person = {

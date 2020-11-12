@@ -3,8 +3,8 @@
 /* In programming, data types is an important concept.To be able to operate on variables, it is important to know something about the type.
 - Without data types, a computer cannot safely solve this: let x = 16 + "Hello";  JavaScript will treat the number as a string.
 
-- it is imortatnt to distingush between the primative and reference type because the primative type are immutable and reference typa are mutable 
-which aloww us to perform alot fo data minpulation , using methods and properties 
+- it is important to distinguish between the primitive and reference type because the primitive type are immutable and reference type are mutable 
+which allow us to perform a lot fo data manipulation , using methods and properties 
 
 */ 
 
