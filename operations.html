@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Study Guide </title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=width-device"/>
+    <meta name="description" content="JavaScript study guide website">
+
+    <!-- you will need these styles and scripts -->
+    <!-- if you create new .html files, copy them into the head -->
+    <!-- if those files are in a folder, be sure to adjust all the paths! -->
+    <link rel="stylesheet" data-name="vs/editor/editor.main" href="./lib/monaco/min/vs/editor/editor.main.css"/>
+    <link rel="stylesheet" href="./CSS/operations.css"/>
+    <link rel="stylesheet" href="./CSS/flexboxgrid.css"/>
+    <link rel="icon" href="./images/icon.png">
+
+    <script src='./lib/prettier/standalone.js'></script>
+    <script src='./lib/prettier/parser-babel.js'></script>
+
+    <script>var require = { paths: { 'vs': './lib/monaco/min/vs' } };</script>
+    <script src="./lib/monaco/min/vs/loader.js"></script>
+    <script src="./lib/monaco/min/vs/editor/editor.main.nls.js"></script>
+    <script src="./lib/monaco/min/vs/editor/editor.main.js"></script>
+
+    <script src='./lib/wc-js-snippet.js'></script>
+
+    <script src='./lib/evaluation-buttons.js'></script>
+
+</head>
+
+<body>
+  <!--   HEADER-->
+    <header class="main-header" >
+      <div class="container">
+          <div class="row start-xm start-sm start-md start-lg  middle-sm middle-md middle-md middle-lg ">
+              <div  id="logo" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 center-xs center-sm center-md center-lg">
+                <img src="./images/logo.PNG" alt="Logo"/>
+              </div>
+              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 center-xs center-sm center-md center-lg">
+                <h1>JavaScript Tutorial </h1>
+              </div>
+              <div id="search" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 center-xs center-sm center-md center-lg">
+                <form action="https://www.google.com/">
+                    <input type="text" >
+                    <input type="submit" value="">
+                </form>
+              </div>
+              <div id ="mail" class="col-xs-1 col-sm-1 col-md-1 col-lg-1 center-xs center-sm center-md center-lg">
+                <img src="./images/Email.PNG" alt="E-mail"/> 
+              </div>
+          </div>
+      </div> 
+      <nav class="main-nav">
+          <ul>
+              <li> <a href="index.html"><span id="current-page">Home</span></a> </li>
+              <li> <a href="variables.html">Variables</a></li>
+              <li> <a href="operations.html">Operations</a></li>
+              <li> <a href="loops.html">Loops</a></li>
+              <li> <a href="reference.html">Reference type</a></li>
+          </ul>
+      </nav>
+    </header> 
+    <!--MAIN part -->
+    <main>
+        <section class="section-text">
+          <h3>What are Operators in JavaScript</h3>
+          <p>Operators are symbols or keywords that tell the JavaScript engine to perform some sort of actions. 
+            For example, the addition (+) symbol is an operator that tells JavaScript engine to add two variables or values, 
+            while the equal-to (==), greater-than (>) or less-than (<) symbols are the operators that tells JavaScript engine to compare two variables or values, and so on. </p>
+
+          <p>The following sections describe the different operators used in JavaScript.</p> <br>
+            <h3>Arithmetic operators</h3>
+            <p>In JavaScript,arithmetic operators take numerical values as their operands and return  a single numerical value.</p>
+              
+          <p>The arithmetic operators are used to perform common arithmetical operations, such as addition, subtraction, multiplication etc.
+            Here's a complete list of JavaScript's arithmetic operators:</p>
+              
+              <div class="shadow">
+                <table class="data">
+                    <tr>
+                        <th>Operator</th>
+                          <th>Description</th>
+                          
+                      </tr>
+                      <tr>
+                        <td><code>+</code></td>
+                          <td>Addition</td>
+                          
+                      </tr>
+                      <tr>
+                        <td><code>-</code></td>
+                          <td>Subtraction</td>
+                          
+                      </tr>
+                      <tr>
+                        <td><code>*</code></td>
+                          <td>Multiplication</td>
+                          
+                      </tr>
+                      <tr>
+                        <td><code>/</code></td>
+                          <td>Division</td>
+                          
+                      </tr>
+                      <tr>
+                        <td><code>%</code></td>
+                          <td>Modulus</td>
+                          
+                      </tr>
+                  </table>
+              </div>
+              <div class="example">
+                <div class="codebox">
+                    <div class="codebox-title"><h3>Example</h3><a href="../codelab.php?topic=javascript&amp;file=arithmetic-operators" target="_blank" class="try-btn" title="Try this code using online Editor">Try this code <span>&raquo;</span></a></div>
+                    <pre class="syntax-highlighter line-numbers"><code class="language-javascript">
+                </div>
+                <div class="code">
+                  <js-snippet  src='./exersises/arithmetic.js'></js-snippet>
+                </div> 
+            </div>
+          <h3>Logical operators</h3>
+            <p>Logical operators are used to determine the logic between variables or values.</p>
+            <p>There are three  logical operators in JavaScript:|| (OR), && (AND), ! (NOT </p><br>
+            <h3>|| (OR)</h3>
+            <p>|| is known as OR operator. It checks whether any one of the two operands is non-zero (0, false, undefined, null or “” is considered as zero).</p>
+            <h3>&& (AND)</h3>
+            <p>&& is known as AND operator. It checks whether two operands are non-zero (0, false, undefined, null or “” are considered as zero), if yes then returns 1 otherwise 0.</p>
+            <h3>! (NOT) </h3>
+            <p>! is known as NOT operator. It reverses the boolean result of the operand (or condition)</p>
+            </div>
+            <div class="example">
+              <div class="codebox">
+                  <div class="codebox-title"><h3>Example</h3><a href="../codelab.php?topic=javascript&amp;file=logical-operators" target="_blank" class="try-btn" title="Try this code using online Editor">Try this code <span>&raquo;</span></a></div>
+                  <pre class="syntax-highlighter line-numbers"><code class="language-javascript">
+              </div>
+              <div class="code">
+                  <js-snippet  src='./exersises/logical.js'></js-snippet>
+          </div>
+          <h3>JavaScript Conditional Statements</h3>
+          <p>Like many other programming languages, JavaScript also allows you to write code that perform different actions based on the results of a logical or comparative test conditions at run time. This means, you can create test conditions in the form of expressions that evaluates to either true or false and based on these results you can perform certain actions.</p>
+          <p>There are several conditional statements in JavaScript that you can use to make decisions:</p>
+          <p>the if statement,The if...else statement,The if...else if....else statement,he switch...case statement</p> 
+          <p>We will discuss each of these statements in detail in the coming sections.</p>
+          <h3>The if Statement</h3>
+          <p>The if statement is used to execute a block of code only if the specified condition evaluates to true. This is the simplest JavaScript's conditional statements and can be written like:</p>
+          <div class="shadow break">
+            <div class="syntax">
+                  <span class="keyword">if</span>(condition) {<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;<em>// Code to be executed</em><br />
+                  }
+              </div>
+          </div>
+            <p>The following example will output "Have a nice weekend!" if the current day is Friday:</p>
+            <div class="example">
+              <div class="codebox">
+                  <div class="codebox-title"><h3>Example</h3><a href="../codelab.php?topic=javascript&amp;file=if-statement" target="_blank" class="try-btn" title="Try this code using online Editor">Try this code <span>&raquo;</span></a></div>
+                  <pre class="syntax-highlighter line-numbers"><code class="language-javascript">
+              </div>
+              <div class="code">
+              <js-snippet  src='./exersises/conditions.js'></js-snippet>
+      </div>
+          <h3>The <code>if...else</code> Statement</h3>
+        <p>You can enhance the decision making capabilities of your JavaScript program by providing an alternative choice through adding an else statement to the if statement.
+        The if...else statement allows you to execute one block of code if the specified condition is evaluates to true and another block of code if it is evaluates to false. It can be written, like this:</p>
+          <div class="example"><br>
+            <div class="codebox">
+                <div class="codebox-title"><h3>Example</h3><a href="../codelab.php?topic=javascript&amp;file=if-else-statement" target="_blank" class="try-btn" title="Try this code using online Editor">Try this code <span>&raquo;</span></a></div>
+                <pre class="syntax-highlighter line-numbers"><code class="language-javascript">
+            </div>
+        </div>
+        <div class="code">
+<js-snippet  src='./exersises/conditions2.js'></js-snippet>
+</div>
+<h3>The if...else if...else Statement</h3>
+<p>The if...else if...else a special statement that is used to combine multiple if...else statements.</p>
+<div class="shadow break">
+  <div class="syntax">
+      <span class="keyword">if</span>(condition1) {<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"><em>// Code to be executed if condition1 is true</em></span><br />
+      } <span class="keyword">else if</span>(condition2) {<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"><em>// Code to be executed if the condition1 is false and condition2 is true</em></span><br />
+      } <span class="keyword">else</span> {<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"><em>// Code to be executed if both condition1 and condition2 are false</em></span><br />
+      }
+  </div>
+</div>
+<p>The following example will output "Have a nice weekend!" if the current day is Friday, and "Have a nice Sunday!" if the current day is Sunday, otherwise it will output "Have a nice day!"</p>
+<div class="example">
+  <div class="codebox">
+      <div class="codebox-title"><h3>Example</h3><a href="../codelab.php?topic=javascript&amp;file=if-elseif-else-statement" target="_blank" class="try-btn" title="Try this code using online Editor">Try this code <span>&raquo;</span></a></div>
+      <pre class="syntax-highlighter line-numbers"><code class="language-javascript">
+  </div>
+</div>
+<div class="code">
+<js-snippet  src='./exersises/conditions3.js'></js-snippet>
+</div>
+
+<h3>Comparison Operators</h3>
+<p>Comparison operators are used in logical statements to determine equality or difference between variables or values.</p>
+<p>Given that x = 5, the table below explains the comparison operators:</p><br>
+
+<div class="w3-responsive" style="margin:-16px 0">
+  <table class="w3-table-all notranslate">
+  <tr>
+  <th style="width:12%">Operator</th>
+  <th>Description</th>
+  <th>Comparing</th>
+  <th>Returns</th>
+  <th style="width:10%">Try it</th>
+  </tr>
+  <tr style="background-color:#f5f5f5;">
+  <td rowspan="3">==</td>
+  <td rowspan="3">equal to</td>
+  <td>x == 8</td>
+  <td>false</td>
+  <td><a target="_blank" class="w3-btn" href="tryit.asp?filename=tryjs_comparison1">Try it &raquo;</a></td> 
+  </tr>
+  <tr style="background-color:#f5f5f5;">
+  <td>x == 5</td>
+  <td>true</td>
+  <td><a target="_blank" class="w3-btn" href="tryit.asp?filename=tryjs_comparison2">Try it &raquo;</a></td> 
+  </tr>
+  <tr style="background-color:#f5f5f5;">
+  <td>x == "5"</td>
+  <td>true</td>
+  <td><a target="_blank" class="w3-btn" href="tryit.asp?filename=tryjs_comparison12">Try it &raquo;</a></td> 
+  </tr>
+  <tr style="background-color:#ffffff;">
+  <td rowspan="2">===</td>
+  <td rowspan="2">equal value and equal type</td>
+  <td>x === 5</td>
+  <td>true</td>
+  <td><a target="_blank" class="w3-btn" href="tryit.asp?filename=tryjs_comparison4">Try it &raquo;</a></td>
+  </tr>
+  <tr style="background-color:#ffffff;">
+  <td>x === "5"</td>
+  <td>false</td>
+  <td><a target="_blank" class="w3-btn" href="tryit.asp?filename=tryjs_comparison3">Try it &raquo;</a></td>
+  </tr>
+  <tr style="background-color:#f5f5f5;">
+  <td>!=</td>
+  <td>not equal</td>
+  <td>x != 8</td>
+  <td>true</td>
+  <td><a target="_blank" class="w3-btn" href="tryit.asp?filename=tryjs_comparison5">Try it &raquo;</a></td>
+  </tr>
+  <tr style="background-color:#fff;">
+  <td rowspan="3">!==</td>
+  <td rowspan="3">not equal value or not equal type</td>
+  <td>x !== 5</td>
+  <td>false</td>
+  <td>
+  <a class="w3-btn" href="tryit.asp?filename=tryjs_comparison7" target="_blank">Try it &raquo;</a></td>
+  </tr>
+  <tr style="background-color:#fff">
+  <td>x !== &quot;5&quot;</td>
+  <td>true</td>
+  <td>
+  <a class="w3-btn" href="tryit.asp?filename=tryjs_comparison6" target="_blank">Try it &raquo;</a></td>
+  </tr>
+  <tr style="background-color:#fff">
+  <td>x !== 8</td>
+  <td>true</td>
+  <td>
+  <a class="w3-btn" href="tryit.asp?filename=tryjs_comparison13" target="_blank">Try it &raquo;</a></td>
+  </tr>
+  <tr style="background-color:#f5f5f5">
+  <td>&gt;</td>
+  <td>greater than</td>
+  <td>x &gt; 8</td>
+  <td>false</td>
+  <td><a target="_blank" class="w3-btn" href="tryit.asp?filename=tryjs_comparison8">Try it &raquo;</a></td>
+  </tr>
+  <tr style="background-color:#ffffff;">
+  <td>&lt;</td>
+  <td>less than</td>
+  <td>x &lt; 8</td>
+  <td>true</td>
+  <td><a target="_blank" class="w3-btn" href="tryit.asp?filename=tryjs_comparison9">Try it &raquo;</a></td>
+  </tr>
+  <tr style="background-color:#f5f5f5;">
+  <td>&gt;=</td>
+  <td>greater than or equal to</td>
+  <td>x &gt;= 8</td>
+  <td>false</td>
+  <td><a target="_blank" class="w3-btn" href="tryit.asp?filename=tryjs_comparison10">Try it &raquo;</a></td>
+  </tr>
+  <tr style="background-color:#ffffff;">
+  <td>&lt;=</td>
+  <td>less than or equal to</td>
+  <td>x &lt;= 8</td>
+  <td>true</td>
+  <td><a target="_blank" class="w3-btn" href="tryit.asp?filename=tryjs_comparison11">Try it &raquo;</a></td>
+  </tr>
+  </table>
+  </div>   
+    </main>  
+<!--FOOTER-->
+<footer class="main-footer">
+    <div class="container">
+        <div class="row start-xm start-sm start-md start-lg  middle-sm middle-md middle-md middle-lg ">
+            <div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+              <h2>About Us</h2>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+                <h2>Contact Us </h2>
+            </div>
+            <div  class="col-xs-4 col-sm-4 col-md-4 col-lg-4 center-xs center-sm center-md center-lg">
+              <h2>Share this :</h2>
+            </div>
+            <div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+              <img src="./images/facebook.png" alt="Facebook" /> 
+            </div>
+            <div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 center-xs center-sm center-md center-lg">
+                <img src="./images/twitter.png" alt="twitter" /> 
+              </div>
+        </div>
+    </div> 
+    <div class="copyright">
+        <p>Copyright&#169;HackYourFuture2020</p>
+    </div>
+
+</footer>
+</body>
+
+</html>
+
