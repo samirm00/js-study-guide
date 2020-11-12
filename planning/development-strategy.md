@@ -197,7 +197,7 @@ _As a visitor_ : _I want to know more information about the different loops in J
 - merge `loops` branch with `master`
 
 
-### 6-Reference type (Samir)
+### 6-Reference type 
 
 _As a user_ : _I will see the the `reference` branch with reference.html file and style.css_
 
@@ -233,7 +233,7 @@ _As a visitor_ : _I want to know more information about the reference type in Ja
 - Add the change , commit them , push to GitHub and checkout `master`
 - merge `reference` branch with `master`
 
-### 7-Final touches  (Group)
+### 7-Final touches  
 
 - Make sure everything working properly 
 - Correct the errors in html and css files 
