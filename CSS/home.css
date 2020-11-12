@@ -222,7 +222,6 @@ h2 {
   margin-bottom: 3rem;
 }
 
-
 /* VARIABLE PAGE*/
 
 .article-content h1 a,
@@ -540,13 +539,16 @@ token.entity,
 }
 
 
-@media screen and (max-width: 1023px) constructed stylesheet code[class*=language-],
-  pre,
-  pre[class*=language-],
-  pre code {
-  font-size: 16px;
+@media screen and (max-width: 1023px)
+constructed stylesheet
+code[class*=language-], pre, pre[class*=language-], pre code {
+    font-size: 16px;
 }
-@media screen and (max-width: 1300px) constructed stylesheet .article-content h1 a:before,
-  .article-content h2 a:before {
-  left: -20px;
-  font-size: 20px;
+@media screen and (max-width: 1300px)
+constructed stylesheet
+.article-content h1 a:before, .article-content h2 a:before {
+    left: -20px;
+    font-size: 20px;
+
+}
+
