@@ -11,7 +11,7 @@
 
 ### why would they want to use it?
 
-*To search for information and learn JavaScript as it is one of the most popular programminf language*
+*To search for information and learn JavaScript as it is one of the most popular programming language*
 
 
 ### WIREFRAME
@@ -64,7 +64,7 @@ _As a visitor_ : _I will see the home page of the website guide and get more Gen
 
 ### HTML
 - Add the title , meta tags , links to `home.css`  
-- Add the header including the logo , `h1` , search box anf the E-mail links
+- Add the header including the logo , `h1` , search box and the E-mail links
 - Add the navigation bar 
 - Add section  with class , `h3` and `p`
 - Add section  with class , `h3` and `p`
@@ -75,7 +75,7 @@ _As a visitor_ : _I will see the home page of the website guide and get more Gen
 
 ### CSS
 - Import fonts
-- Add general style font-family, margin , padding and with to `body`, `img` , and `container`.
+- Add general style font-family, margin , padding and width to `body`, `img` , and `container`.
 - Format `header`
 - Format the navigation bar `main-nav`
 - Format the search box 
@@ -99,7 +99,7 @@ _As a visitor_ : _I want to know more information about the variables in Javascr
 
 ### HTML
 - Add the title , meta tags , links to `home.css`  
-- Add the header including the logo , `h1` , search box anf the E-mail links
+- Add the header including the logo , `h1` , search box and the E-mail links
 - Add the navigation bar 
 - Add section  with class , `h3` and `p`
 - Add section  with class , `h3` and `p`
@@ -111,7 +111,7 @@ _As a visitor_ : _I want to know more information about the variables in Javascr
 
 ### CSS
 - Import fonts
-- Add general style font-family, margin , padding and with to `body`, `img` , and `container`.
+- Add general style font-family, margin , padding and width to `body`, `img` , and `container`.
 - Format `header`
 - Format the navigation bar `main-nav`
 - Format the search box 
@@ -136,7 +136,7 @@ _As a visitor_ : _I want to know more information about the different operations
 
 ### HTML
 - Add the title , meta tags , links to `home.css`  
-- Add the header including the logo , `h1` , search box anf the E-mail links
+- Add the header including the logo , `h1` , search box and the E-mail links
 - Add the navigation bar 
 - Add section  with class , `h3` and `p`
 - Add section  with class , `h3` and `p`
@@ -148,7 +148,7 @@ _As a visitor_ : _I want to know more information about the different operations
 
 ### CSS
 - Import fonts
-- Add general style font-family, margin , padding and with to `body`, `img` , and `container`.
+- Add general style font-family, margin , padding and width to `body`, `img` , and `container`.
 - Format `header`
 - Format the navigation bar `main-nav`
 - Format the search box 
@@ -172,7 +172,7 @@ _As a visitor_ : _I want to know more information about the different loops in J
 
 ### HTML
 - Add the title , meta tags , links to `home.css`  
-- Add the header including the logo , `h1` , search box anf the E-mail links
+- Add the header including the logo , `h1` , search box and the E-mail links
 - Add the navigation bar 
 - Add section  with class , `h3` and `p`
 - Add section  with class , `h3` and `p`
@@ -184,7 +184,7 @@ _As a visitor_ : _I want to know more information about the different loops in J
 
 ### CSS
 - Import fonts
-- Add general style font-family, margin , padding and with to `body`, `img` , and `container`.
+- Add general style font-family, margin , padding and width to `body`, `img` , and `container`.
 - Format `header`
 - Format the navigation bar `main-nav`
 - Format the search box 
@@ -209,7 +209,7 @@ _As a visitor_ : _I want to know more information about the reference type in Ja
 
 ### HTML
 - Add the title , meta tags , links to `home.css`  
-- Add the header including the logo , `h1` , search box anf the E-mail links
+- Add the header including the logo , `h1` , search box and the E-mail links
 - Add the navigation bar 
 - Add section  with class , `h3` and `p`
 - Add section  with class , `h3` and `p`
@@ -221,7 +221,7 @@ _As a visitor_ : _I want to know more information about the reference type in Ja
 
 ### CSS
 - Import fonts
-- Add general style font-family, margin , padding and with to `body`, `img` , and `container`.
+- Add general style font-family, margin , padding and width to `body`, `img` , and `container`.
 - Format `header`
 - Format the navigation bar `main-nav`
 - Format the search box 
