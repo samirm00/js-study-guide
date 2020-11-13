@@ -1,7 +1,7 @@
 # JavaScript Tutorial guide 
 
 
-### write a short description of your project:
+### write a short description of your project
 
 *JavaScript tutorial guide , including a very detailed explanation , examples and exercises.* 
 
@@ -63,6 +63,7 @@ _As a visitor_ : _I will see the home page of the website guide and get more Gen
 - Add code to `index.html` and `home.css` 
 
 ### HTML
+
 - Add the title , meta tags , links to `home.css`  
 - Add the header including the logo , `h1` , search box and the E-mail links
 - Add the navigation bar 
@@ -74,6 +75,7 @@ _As a visitor_ : _I will see the home page of the website guide and get more Gen
 - Add `footer`
 
 ### CSS
+
 - Import fonts
 - Add general style font-family, margin , padding and width to `body`, `img` , and `container`.
 - Format `header`
@@ -98,6 +100,7 @@ _As a visitor_ : _I want to know more information about the variables in Javascr
 - Add code to `variables` and `home.css` 
 
 ### HTML
+
 - Add the title , meta tags , links to `home.css`  
 - Add the header including the logo , `h1` , search box and the E-mail links
 - Add the navigation bar 
@@ -110,6 +113,7 @@ _As a visitor_ : _I want to know more information about the variables in Javascr
 - Add `footer`
 
 ### CSS
+
 - Import fonts
 - Add general style font-family, margin , padding and width to `body`, `img` , and `container`.
 - Format `header`
@@ -135,6 +139,7 @@ _As a visitor_ : _I want to know more information about the different operations
 - Add code to `operations` and `home.css` 
 
 ### HTML
+
 - Add the title , meta tags , links to `home.css`  
 - Add the header including the logo , `h1` , search box and the E-mail links
 - Add the navigation bar 
@@ -147,6 +152,7 @@ _As a visitor_ : _I want to know more information about the different operations
 - Add `footer`
 
 ### CSS
+
 - Import fonts
 - Add general style font-family, margin , padding and width to `body`, `img` , and `container`.
 - Format `header`
@@ -171,6 +177,7 @@ _As a visitor_ : _I want to know more information about the different loops in J
 - Add code to `loops` and `home.css` 
 
 ### HTML
+
 - Add the title , meta tags , links to `home.css`  
 - Add the header including the logo , `h1` , search box and the E-mail links
 - Add the navigation bar 
@@ -183,6 +190,7 @@ _As a visitor_ : _I want to know more information about the different loops in J
 - Add `footer`
 
 ### CSS
+
 - Import fonts
 - Add general style font-family, margin , padding and width to `body`, `img` , and `container`.
 - Format `header`
@@ -208,6 +216,7 @@ _As a visitor_ : _I want to know more information about the reference type in Ja
 - Add code to `reference` and `home.css` 
 
 ### HTML
+
 - Add the title , meta tags , links to `home.css`  
 - Add the header including the logo , `h1` , search box and the E-mail links
 - Add the navigation bar 
@@ -220,6 +229,7 @@ _As a visitor_ : _I want to know more information about the reference type in Ja
 - Add `footer`
 
 ### CSS
+
 - Import fonts
 - Add general style font-family, margin , padding and width to `body`, `img` , and `container`.
 - Format `header`
@@ -236,5 +246,5 @@ _As a visitor_ : _I want to know more information about the reference type in Ja
 ### 7-Final touches  
 
 - Make sure everything working properly 
-- Correct the errors in html and css files 
+- Validate  html and css files  
 - Write full README file
